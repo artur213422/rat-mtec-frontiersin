@@ -1,0 +1,10 @@
+.idea
+/data/mouse/cleaned_data/converted/
+/data/mouse/cleaned_data/cleaned/
+/data/mouse/platform_annotation_table/
+/data/mouse/raw_data/
+/data/rat/annotation_tables/
+/data/rat/cleaned_data/
+/data/rat/raw_data/
+/data/shared_orthologs/HOM_AllOrganism.rpt.csv
+/data/shared_orthologs/HOM_AllOrganism.rpt.txt

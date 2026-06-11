@@ -1,0 +1,36 @@
+Dataset: GSE14365
+Input rows: 45101
+Dropped null/invalid rows: 5437
+Removed unresolved genes: 0
+Collapsed duplicate rows: 18068
+Resolved rik genes: 2853
+Unique genes after cleaning: 20599
+
+
+Dataset: GSE2585_II_mtec_hi and GSE2585_I
+Input rows: 12489
+Dropped null/invalid rows: 535
+Removed unresolved genes: 0
+Collapsed duplicate rows: 2828
+Resolved rik genes: 125
+Unique genes after cleaning: 8864
+
+
+
+Dataset: GSE33878
+Input rows: 35512
+Dropped null/invalid rows: 8154
+Removed unresolved genes: 0
+Collapsed duplicate rows: 3146
+Resolved rik genes: 1339
+Unique genes after cleaning: 21414
+
+
+Dataset: GSE85
+Input rows: 12488
+Dropped null/invalid rows: 534
+Removed unresolved genes: 0
+Collapsed duplicate rows: 2828
+Resolved rik genes: 125
+Unique genes after cleaning: 8864
+

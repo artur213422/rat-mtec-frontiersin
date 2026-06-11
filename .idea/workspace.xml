@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc1f655e-3a88-4e29-b084-3a8b61c946d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/analysis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/converted/GSE2585_II_mtec_hi_converted.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/annotation_conversion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/cleanup_datasets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/utils/annotations_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/utils/cleanup_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/summary" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/GPL1261-56135.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/GPL6246-18741.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/GPL81-57556.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/MRK_List1.rpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mouse/raw_data/GSE85_series_matrix.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/rat/annotation_tables/GENES_RAT_for_rgd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/rat/annotation_tables/mart_export_for_ens.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/rat/annotation_tables/source" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/rat/cleaned_data/summary" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/rat/sdk/gene_symbol_cleanup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/rat/sdk/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/rat/sdk/rat_to_mouse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/HOM_AllOrganism.rpt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/summary" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/mapped/rat/summary" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/sdk/helpers/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/sdk/map_mouse_orthologs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/sdk/map_rat_orthologs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/shared_sdk/gene_symbol_cleaning_tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3Eqr7y3wBbDfBQTGQ77nFhqirkv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.annotation_conversion.executor": "Run",
+    "Python.celaning_utils.executor": "Run",
+    "Python.clean_mouse_data.executor": "Run",
+    "Python.clean_rat_data.executor": "Run",
+    "Python.cleanup_data.executor": "Run",
+    "Python.cleanup_datasets.executor": "Run",
+    "Python.convert_to_ortologs.executor": "Run",
+    "Python.gene_symbol_cleaning_tools.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.map_mouse_orthologs.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "G:/10. ÜLIÕPILASED/Artur/9. Review/analysis/data/shared_orthologs"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\shared_orthologs" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\cleaned_data\converted" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\platform_annotation_table" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\rat\raw_data" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\cleaned_data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\shared_orthologs\sdk" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\cleaned_data\sdk\utils" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\rat\sdk" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\rat\annotation_tables" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\shared_sdk" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc1f655e-3a88-4e29-b084-3a8b61c946d7" name="Changes" comment="" />
+      <created>1780916776161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780916776161</updated>
+    </task>
+    <servers />
+  </component>
+</project>

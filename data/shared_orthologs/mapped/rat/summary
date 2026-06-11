@@ -1,0 +1,15 @@
+mtec low
+    OK: 16241
+    No orthology found: 0
+    Orthology ID not found: 4968
+    Polymorphic mouse genes: 0
+    Polymorphic rat genes: 887
+    Total genes: 21209
+
+mtec high:
+    OK: 16241
+    No orthology found: 0
+    Orthology ID not found: 4968
+    Polymorphic mouse genes: 0
+    Polymorphic rat genes: 887
+    Total: 21209
