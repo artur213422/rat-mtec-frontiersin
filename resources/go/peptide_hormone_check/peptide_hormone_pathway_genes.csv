@@ -1,0 +1,506 @@
+species,namespace,go_term,name,gene_symbol
+mouse,biological_process,GO:0016486,peptide hormone processing,Chst8
+mouse,biological_process,GO:0016486,peptide hormone processing,Corin
+mouse,biological_process,GO:0016486,peptide hormone processing,Ece1
+mouse,biological_process,GO:0016486,peptide hormone processing,Eef1ece2
+mouse,biological_process,GO:0016486,peptide hormone processing,Furin
+mouse,biological_process,GO:0016486,peptide hormone processing,Pcsk1
+mouse,biological_process,GO:0016486,peptide hormone processing,Pcsk1n
+mouse,biological_process,GO:0016486,peptide hormone processing,Pcsk2
+mouse,biological_process,GO:0016486,peptide hormone processing,Pcsk4
+mouse,biological_process,GO:0016486,peptide hormone processing,Pcsk5
+mouse,biological_process,GO:0016486,peptide hormone processing,Pcsk6
+mouse,biological_process,GO:0016486,peptide hormone processing,Scg5
+mouse,biological_process,GO:0016486,peptide hormone processing,mECE2
+mouse,biological_process,GO:0016486,peptide hormone processing,mPCSK5/iso:PC5B
+mouse,biological_process,GO:0030072,peptide hormone secretion,Cpe
+mouse,biological_process,GO:0030072,peptide hormone secretion,Edn1
+mouse,biological_process,GO:0030072,peptide hormone secretion,Edn3
+mouse,biological_process,GO:0030072,peptide hormone secretion,Exoc3l
+mouse,biological_process,GO:0030072,peptide hormone secretion,Ghsr
+mouse,biological_process,GO:0030072,peptide hormone secretion,Htt
+mouse,biological_process,GO:0030072,peptide hormone secretion,Smpd3
+mouse,biological_process,GO:0043434,response to peptide hormone,Aldob
+mouse,biological_process,GO:0043434,response to peptide hormone,Apoc3
+mouse,biological_process,GO:0043434,response to peptide hormone,Areg
+mouse,biological_process,GO:0043434,response to peptide hormone,Ass1
+mouse,biological_process,GO:0043434,response to peptide hormone,Atp2a1
+mouse,biological_process,GO:0043434,response to peptide hormone,Atp2a2
+mouse,biological_process,GO:0043434,response to peptide hormone,Bmp7
+mouse,biological_process,GO:0043434,response to peptide hormone,Braf
+mouse,biological_process,GO:0043434,response to peptide hormone,Bsg
+mouse,biological_process,GO:0043434,response to peptide hormone,Btg1
+mouse,biological_process,GO:0043434,response to peptide hormone,Btg2
+mouse,biological_process,GO:0043434,response to peptide hormone,Ccnd3
+mouse,biological_process,GO:0043434,response to peptide hormone,Col1a1
+mouse,biological_process,GO:0043434,response to peptide hormone,Cyp11b2
+mouse,biological_process,GO:0043434,response to peptide hormone,Dag1
+mouse,biological_process,GO:0043434,response to peptide hormone,Eif2b1
+mouse,biological_process,GO:0043434,response to peptide hormone,Eif2b2
+mouse,biological_process,GO:0043434,response to peptide hormone,Eif2b3
+mouse,biological_process,GO:0043434,response to peptide hormone,Eif2b4
+mouse,biological_process,GO:0043434,response to peptide hormone,Eif2b5
+mouse,biological_process,GO:0043434,response to peptide hormone,Ereg
+mouse,biological_process,GO:0043434,response to peptide hormone,Gatm
+mouse,biological_process,GO:0043434,response to peptide hormone,Gh
+mouse,biological_process,GO:0043434,response to peptide hormone,Gnrh1
+mouse,biological_process,GO:0043434,response to peptide hormone,Gusb
+mouse,biological_process,GO:0043434,response to peptide hormone,Hhex
+mouse,biological_process,GO:0043434,response to peptide hormone,Hmgcs2
+mouse,biological_process,GO:0043434,response to peptide hormone,Ins1
+mouse,biological_process,GO:0043434,response to peptide hormone,Jund
+mouse,biological_process,GO:0043434,response to peptide hormone,Lrp5
+mouse,biological_process,GO:0043434,response to peptide hormone,Lta4h
+mouse,biological_process,GO:0043434,response to peptide hormone,Nefl
+mouse,biological_process,GO:0043434,response to peptide hormone,Nos1
+mouse,biological_process,GO:0043434,response to peptide hormone,Nudc
+mouse,biological_process,GO:0043434,response to peptide hormone,Oxt
+mouse,biological_process,GO:0043434,response to peptide hormone,Phb1
+mouse,biological_process,GO:0043434,response to peptide hormone,Plcb1
+mouse,biological_process,GO:0043434,response to peptide hormone,Plcd1
+mouse,biological_process,GO:0043434,response to peptide hormone,Pld1
+mouse,biological_process,GO:0043434,response to peptide hormone,Pld2
+mouse,biological_process,GO:0043434,response to peptide hormone,Prkci
+mouse,biological_process,GO:0043434,response to peptide hormone,Prlh
+mouse,biological_process,GO:0043434,response to peptide hormone,Reg1
+mouse,biological_process,GO:0043434,response to peptide hormone,Reg2
+mouse,biological_process,GO:0043434,response to peptide hormone,Reg3a
+mouse,biological_process,GO:0043434,response to peptide hormone,Reg3b
+mouse,biological_process,GO:0043434,response to peptide hormone,Reg3d
+mouse,biological_process,GO:0043434,response to peptide hormone,Reg3g
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina11
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina1a
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina1b
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina1c
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina1d
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina1e
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina3c
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina3f
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina3g
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina3i
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina3k
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina3m
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina3n
+mouse,biological_process,GO:0043434,response to peptide hormone,Serpina7
+mouse,biological_process,GO:0043434,response to peptide hormone,Slco1b2
+mouse,biological_process,GO:0043434,response to peptide hormone,Srd5a2
+mouse,biological_process,GO:0043434,response to peptide hormone,Srebf1
+mouse,biological_process,GO:0043434,response to peptide hormone,Star
+mouse,biological_process,GO:0043434,response to peptide hormone,Stat1
+mouse,biological_process,GO:0043434,response to peptide hormone,Stat2
+mouse,biological_process,GO:0043434,response to peptide hormone,Stat3
+mouse,biological_process,GO:0043434,response to peptide hormone,Stat4
+mouse,biological_process,GO:0043434,response to peptide hormone,Stat5a
+mouse,biological_process,GO:0043434,response to peptide hormone,Stat5b
+mouse,biological_process,GO:0043434,response to peptide hormone,Stat6
+mouse,biological_process,GO:0043434,response to peptide hormone,Stc2
+mouse,biological_process,GO:0043434,response to peptide hormone,Sts
+mouse,biological_process,GO:0043434,response to peptide hormone,Timp1
+mouse,biological_process,GO:0043434,response to peptide hormone,Trim24
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cav1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Csk
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp11a1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp11b1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp11b2
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Edn1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Fyn
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Gper1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Il18
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Irf1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Map1b
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Mapk1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Mdm2
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Nkx6-1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Plcb1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Por
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Rangap1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Src
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Wnt1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Xbp1
+mouse,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Zfp36l1
+mouse,biological_process,GO:0090276,regulation of peptide hormone secretion,Drd2
+mouse,biological_process,GO:0090276,regulation of peptide hormone secretion,Ffar1
+mouse,biological_process,GO:0090276,regulation of peptide hormone secretion,Ffar2
+mouse,biological_process,GO:0090276,regulation of peptide hormone secretion,Ffar3
+mouse,biological_process,GO:0090276,regulation of peptide hormone secretion,Hmga2
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Fga
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Fgb
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Fgg
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Grp
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Hfe
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Ildr1
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Prkd1
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Rasl10b
+mouse,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Tfr2
+mouse,biological_process,GO:0090278,negative regulation of peptide hormone secretion,Pparg
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Adcyap1
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Agrp
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Avp
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Cartpt
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Cck
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Cort
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Ecrg4
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Gal
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Ghrh
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Grp
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Hcrt
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Nmb
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Npff
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Nppa
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Nppc
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Npy
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Nts
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Oxt
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Pdyn
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Ppy
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Prlh
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Pyy
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Qrfp
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Spx
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Tac1
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Ucn2
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Ucn3
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Vgf
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,Vip
+mouse,molecular_function,GO:0005184,neuropeptide hormone activity,a
+mouse,molecular_function,GO:0017046,peptide hormone binding,Adcyap1r1
+mouse,molecular_function,GO:0017046,peptide hormone binding,Anxa5
+mouse,molecular_function,GO:0017046,peptide hormone binding,Avpr1a
+mouse,molecular_function,GO:0017046,peptide hormone binding,Avpr1b
+mouse,molecular_function,GO:0017046,peptide hormone binding,Cckar
+mouse,molecular_function,GO:0017046,peptide hormone binding,Cckbr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Crhr2
+mouse,molecular_function,GO:0017046,peptide hormone binding,Ednrb
+mouse,molecular_function,GO:0017046,peptide hormone binding,Fshr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Galr1
+mouse,molecular_function,GO:0017046,peptide hormone binding,Galr2
+mouse,molecular_function,GO:0017046,peptide hormone binding,Galr3
+mouse,molecular_function,GO:0017046,peptide hormone binding,Gcgr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Ghr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Ghrhr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Ghsr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Gipr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Glp1r
+mouse,molecular_function,GO:0017046,peptide hormone binding,Glp2r
+mouse,molecular_function,GO:0017046,peptide hormone binding,Hcrtr1
+mouse,molecular_function,GO:0017046,peptide hormone binding,Hcrtr2
+mouse,molecular_function,GO:0017046,peptide hormone binding,Ide
+mouse,molecular_function,GO:0017046,peptide hormone binding,Il23r
+mouse,molecular_function,GO:0017046,peptide hormone binding,Inhba
+mouse,molecular_function,GO:0017046,peptide hormone binding,Lepr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Lhcgr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Mc3r
+mouse,molecular_function,GO:0017046,peptide hormone binding,Mc4r
+mouse,molecular_function,GO:0017046,peptide hormone binding,Npr1
+mouse,molecular_function,GO:0017046,peptide hormone binding,Npr2
+mouse,molecular_function,GO:0017046,peptide hormone binding,Npr3
+mouse,molecular_function,GO:0017046,peptide hormone binding,Oxtr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Prlhr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Prlr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Pth1r
+mouse,molecular_function,GO:0017046,peptide hormone binding,Pth2r
+mouse,molecular_function,GO:0017046,peptide hormone binding,Rxfp2
+mouse,molecular_function,GO:0017046,peptide hormone binding,Sctr
+mouse,molecular_function,GO:0017046,peptide hormone binding,Slc40a1
+mouse,molecular_function,GO:0017046,peptide hormone binding,Vipr1
+mouse,molecular_function,GO:0017046,peptide hormone binding,Vipr2
+mouse,molecular_function,GO:0017046,peptide hormone binding,mCRHR2/iso:beta
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Adcyap1
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Cck
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Fyn
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Ghrh
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Gria1
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Jak2
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Lep
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Pth
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Pthlh
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Ptpn11
+mouse,molecular_function,GO:0051428,peptide hormone receptor binding,Vip
+rat,biological_process,GO:0016486,peptide hormone processing,Corin
+rat,biological_process,GO:0016486,peptide hormone processing,Cpe
+rat,biological_process,GO:0016486,peptide hormone processing,Ece1
+rat,biological_process,GO:0016486,peptide hormone processing,Ece2
+rat,biological_process,GO:0016486,peptide hormone processing,Furin
+rat,biological_process,GO:0016486,peptide hormone processing,Pcsk1
+rat,biological_process,GO:0016486,peptide hormone processing,Pcsk1n
+rat,biological_process,GO:0016486,peptide hormone processing,Pcsk2
+rat,biological_process,GO:0016486,peptide hormone processing,Pcsk4
+rat,biological_process,GO:0016486,peptide hormone processing,Pcsk5
+rat,biological_process,GO:0016486,peptide hormone processing,Pcsk6
+rat,biological_process,GO:0016486,peptide hormone processing,Scg5
+rat,biological_process,GO:0030072,peptide hormone secretion,Cpe
+rat,biological_process,GO:0030072,peptide hormone secretion,Edn1
+rat,biological_process,GO:0030072,peptide hormone secretion,Edn3
+rat,biological_process,GO:0030072,peptide hormone secretion,Exoc3l1
+rat,biological_process,GO:0030072,peptide hormone secretion,Ghsr
+rat,biological_process,GO:0030072,peptide hormone secretion,Htt
+rat,biological_process,GO:0030072,peptide hormone secretion,Smpd3
+rat,biological_process,GO:0043434,response to peptide hormone,Aldob
+rat,biological_process,GO:0043434,response to peptide hormone,Anxa1
+rat,biological_process,GO:0043434,response to peptide hormone,Apoc3
+rat,biological_process,GO:0043434,response to peptide hormone,Areg
+rat,biological_process,GO:0043434,response to peptide hormone,Arg1
+rat,biological_process,GO:0043434,response to peptide hormone,Asl
+rat,biological_process,GO:0043434,response to peptide hormone,Ass1
+rat,biological_process,GO:0043434,response to peptide hormone,Atp2a1
+rat,biological_process,GO:0043434,response to peptide hormone,Bcl2
+rat,biological_process,GO:0043434,response to peptide hormone,Bcl2l1
+rat,biological_process,GO:0043434,response to peptide hormone,Birc5
+rat,biological_process,GO:0043434,response to peptide hormone,Bmp7
+rat,biological_process,GO:0043434,response to peptide hormone,Braf
+rat,biological_process,GO:0043434,response to peptide hormone,Bsg
+rat,biological_process,GO:0043434,response to peptide hormone,Btg1
+rat,biological_process,GO:0043434,response to peptide hormone,Btg2
+rat,biological_process,GO:0043434,response to peptide hormone,Ccn2
+rat,biological_process,GO:0043434,response to peptide hormone,Ccnd2
+rat,biological_process,GO:0043434,response to peptide hormone,Ccnd3
+rat,biological_process,GO:0043434,response to peptide hormone,Cd55
+rat,biological_process,GO:0043434,response to peptide hormone,Cdkn1b
+rat,biological_process,GO:0043434,response to peptide hormone,Cftr
+rat,biological_process,GO:0043434,response to peptide hormone,Col1a1
+rat,biological_process,GO:0043434,response to peptide hormone,Cox5b
+rat,biological_process,GO:0043434,response to peptide hormone,Crygd
+rat,biological_process,GO:0043434,response to peptide hormone,Ctrb1
+rat,biological_process,GO:0043434,response to peptide hormone,Ctsb
+rat,biological_process,GO:0043434,response to peptide hormone,Cxcl12
+rat,biological_process,GO:0043434,response to peptide hormone,Cyp11a1
+rat,biological_process,GO:0043434,response to peptide hormone,Cyp11b2
+rat,biological_process,GO:0043434,response to peptide hormone,Cyp27b1
+rat,biological_process,GO:0043434,response to peptide hormone,Cyp2c7
+rat,biological_process,GO:0043434,response to peptide hormone,Dag1
+rat,biological_process,GO:0043434,response to peptide hormone,Dbh
+rat,biological_process,GO:0043434,response to peptide hormone,Eif2b1
+rat,biological_process,GO:0043434,response to peptide hormone,Eif2b2
+rat,biological_process,GO:0043434,response to peptide hormone,Eif2b3
+rat,biological_process,GO:0043434,response to peptide hormone,Eif2b4
+rat,biological_process,GO:0043434,response to peptide hormone,Eif2b5
+rat,biological_process,GO:0043434,response to peptide hormone,Ereg
+rat,biological_process,GO:0043434,response to peptide hormone,Fas
+rat,biological_process,GO:0043434,response to peptide hormone,Fdps
+rat,biological_process,GO:0043434,response to peptide hormone,Fosl2
+rat,biological_process,GO:0043434,response to peptide hormone,Gatm
+rat,biological_process,GO:0043434,response to peptide hormone,Gh1
+rat,biological_process,GO:0043434,response to peptide hormone,Ghr
+rat,biological_process,GO:0043434,response to peptide hormone,Gip
+rat,biological_process,GO:0043434,response to peptide hormone,Gja1
+rat,biological_process,GO:0043434,response to peptide hormone,Gnrh1
+rat,biological_process,GO:0043434,response to peptide hormone,Gria1
+rat,biological_process,GO:0043434,response to peptide hormone,Gusb
+rat,biological_process,GO:0043434,response to peptide hormone,H19
+rat,biological_process,GO:0043434,response to peptide hormone,Hhex
+rat,biological_process,GO:0043434,response to peptide hormone,Hmgcs2
+rat,biological_process,GO:0043434,response to peptide hormone,Il18
+rat,biological_process,GO:0043434,response to peptide hormone,Il1b
+rat,biological_process,GO:0043434,response to peptide hormone,Il6r
+rat,biological_process,GO:0043434,response to peptide hormone,Ins1
+rat,biological_process,GO:0043434,response to peptide hormone,Insig1
+rat,biological_process,GO:0043434,response to peptide hormone,Junb
+rat,biological_process,GO:0043434,response to peptide hormone,Jund
+rat,biological_process,GO:0043434,response to peptide hormone,Lipc
+rat,biological_process,GO:0043434,response to peptide hormone,Lrp5
+rat,biological_process,GO:0043434,response to peptide hormone,Lrp6
+rat,biological_process,GO:0043434,response to peptide hormone,Lta4h
+rat,biological_process,GO:0043434,response to peptide hormone,Lyn
+rat,biological_process,GO:0043434,response to peptide hormone,Mas1
+rat,biological_process,GO:0043434,response to peptide hormone,Met
+rat,biological_process,GO:0043434,response to peptide hormone,Nefl
+rat,biological_process,GO:0043434,response to peptide hormone,Ngf
+rat,biological_process,GO:0043434,response to peptide hormone,Nos1
+rat,biological_process,GO:0043434,response to peptide hormone,Nos3
+rat,biological_process,GO:0043434,response to peptide hormone,Nppb
+rat,biological_process,GO:0043434,response to peptide hormone,Nr0b1
+rat,biological_process,GO:0043434,response to peptide hormone,Nr4a3
+rat,biological_process,GO:0043434,response to peptide hormone,Nudc
+rat,biological_process,GO:0043434,response to peptide hormone,Oxt
+rat,biological_process,GO:0043434,response to peptide hormone,Oxtr
+rat,biological_process,GO:0043434,response to peptide hormone,Pcsk1
+rat,biological_process,GO:0043434,response to peptide hormone,Phb1
+rat,biological_process,GO:0043434,response to peptide hormone,Plcb1
+rat,biological_process,GO:0043434,response to peptide hormone,Plcd1
+rat,biological_process,GO:0043434,response to peptide hormone,Pld1
+rat,biological_process,GO:0043434,response to peptide hormone,Pld2
+rat,biological_process,GO:0043434,response to peptide hormone,Pnlip
+rat,biological_process,GO:0043434,response to peptide hormone,Pnliprp1
+rat,biological_process,GO:0043434,response to peptide hormone,Pnliprp2
+rat,biological_process,GO:0043434,response to peptide hormone,Pnmt
+rat,biological_process,GO:0043434,response to peptide hormone,Prkca
+rat,biological_process,GO:0043434,response to peptide hormone,Prkci
+rat,biological_process,GO:0043434,response to peptide hormone,Prlh
+rat,biological_process,GO:0043434,response to peptide hormone,Prss8
+rat,biological_process,GO:0043434,response to peptide hormone,Reg1a
+rat,biological_process,GO:0043434,response to peptide hormone,Reg3a
+rat,biological_process,GO:0043434,response to peptide hormone,Reg3b
+rat,biological_process,GO:0043434,response to peptide hormone,Reg3g
+rat,biological_process,GO:0043434,response to peptide hormone,Rnf40
+rat,biological_process,GO:0043434,response to peptide hormone,Rps6kb1
+rat,biological_process,GO:0043434,response to peptide hormone,Serpina3n
+rat,biological_process,GO:0043434,response to peptide hormone,Serpina7
+rat,biological_process,GO:0043434,response to peptide hormone,Sfrp4
+rat,biological_process,GO:0043434,response to peptide hormone,Si
+rat,biological_process,GO:0043434,response to peptide hormone,Slc2a2
+rat,biological_process,GO:0043434,response to peptide hormone,Slc34a1
+rat,biological_process,GO:0043434,response to peptide hormone,Slco1b2
+rat,biological_process,GO:0043434,response to peptide hormone,Socs1
+rat,biological_process,GO:0043434,response to peptide hormone,Socs2
+rat,biological_process,GO:0043434,response to peptide hormone,Socs3
+rat,biological_process,GO:0043434,response to peptide hormone,Sparc
+rat,biological_process,GO:0043434,response to peptide hormone,Srd5a2
+rat,biological_process,GO:0043434,response to peptide hormone,Srebf1
+rat,biological_process,GO:0043434,response to peptide hormone,Star
+rat,biological_process,GO:0043434,response to peptide hormone,Stat1
+rat,biological_process,GO:0043434,response to peptide hormone,Stat2
+rat,biological_process,GO:0043434,response to peptide hormone,Stat3
+rat,biological_process,GO:0043434,response to peptide hormone,Stat4
+rat,biological_process,GO:0043434,response to peptide hormone,Stat5a
+rat,biological_process,GO:0043434,response to peptide hormone,Stat5b
+rat,biological_process,GO:0043434,response to peptide hormone,Stat6
+rat,biological_process,GO:0043434,response to peptide hormone,Stc2
+rat,biological_process,GO:0043434,response to peptide hormone,Stk11
+rat,biological_process,GO:0043434,response to peptide hormone,Sts
+rat,biological_process,GO:0043434,response to peptide hormone,Tek
+rat,biological_process,GO:0043434,response to peptide hormone,Tff1
+rat,biological_process,GO:0043434,response to peptide hormone,Tff3
+rat,biological_process,GO:0043434,response to peptide hormone,Th
+rat,biological_process,GO:0043434,response to peptide hormone,Timp1
+rat,biological_process,GO:0043434,response to peptide hormone,Timp4
+rat,biological_process,GO:0043434,response to peptide hormone,Trim24
+rat,biological_process,GO:0043434,response to peptide hormone,Trpv1
+rat,biological_process,GO:0043434,response to peptide hormone,Ugt1a6a
+rat,biological_process,GO:0043434,response to peptide hormone,Uhrf1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Akap1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cav1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Col2a1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Csk
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp11a1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp11b1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp11b2
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp11b3
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Cyp21a1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Edn1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Fyn
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Fzd1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Fzd2
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Gper1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Gria1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Il18
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Irf1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Map1b
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Mapk1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Mas1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Max
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Mdm2
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Men1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Met
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Mmp1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Mtus1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Nap1l1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Nkx6-1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Plcb1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Pnmt
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Por
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Rangap1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Spink1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Src
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Wnt1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Xbp1
+rat,biological_process,GO:0071375,cellular response to peptide hormone stimulus,Zfp36l1
+rat,biological_process,GO:0090276,regulation of peptide hormone secretion,Drd2
+rat,biological_process,GO:0090276,regulation of peptide hormone secretion,Ffar2
+rat,biological_process,GO:0090276,regulation of peptide hormone secretion,Ffar3
+rat,biological_process,GO:0090276,regulation of peptide hormone secretion,Hmga2
+rat,biological_process,GO:0090276,regulation of peptide hormone secretion,Tp53
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Fga
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Fgb
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Fgg
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Grp
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Hfe
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Ildr1
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Prkd1
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Rasl10b
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Spink1
+rat,biological_process,GO:0090277,positive regulation of peptide hormone secretion,Tfr2
+rat,biological_process,GO:0090278,negative regulation of peptide hormone secretion,Pparg
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Adcyap1
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Agrp
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Asip
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Avp
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Calca
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Cartpt
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Cck
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Cort
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Ecrg4
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Gal
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Ghrh
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Grp
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Hcrt
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Nmb
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Npff
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Nppa
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Npy
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Nts
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Oxt
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Ppy
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Prlh
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Pyy
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Qrfp
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Spx
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Tac1
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Ucn2
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Ucn3
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Vgf
+rat,molecular_function,GO:0005184,neuropeptide hormone activity,Vip
+rat,molecular_function,GO:0017046,peptide hormone binding,Adcyap1r1
+rat,molecular_function,GO:0017046,peptide hormone binding,Anxa5
+rat,molecular_function,GO:0017046,peptide hormone binding,Avpr1a
+rat,molecular_function,GO:0017046,peptide hormone binding,Avpr1b
+rat,molecular_function,GO:0017046,peptide hormone binding,Avpr2
+rat,molecular_function,GO:0017046,peptide hormone binding,Cckar
+rat,molecular_function,GO:0017046,peptide hormone binding,Cckbr
+rat,molecular_function,GO:0017046,peptide hormone binding,Crhr1
+rat,molecular_function,GO:0017046,peptide hormone binding,Crhr2
+rat,molecular_function,GO:0017046,peptide hormone binding,Ednrb
+rat,molecular_function,GO:0017046,peptide hormone binding,Fshr
+rat,molecular_function,GO:0017046,peptide hormone binding,Galr1
+rat,molecular_function,GO:0017046,peptide hormone binding,Galr2
+rat,molecular_function,GO:0017046,peptide hormone binding,Galr3
+rat,molecular_function,GO:0017046,peptide hormone binding,Gcgr
+rat,molecular_function,GO:0017046,peptide hormone binding,Ghr
+rat,molecular_function,GO:0017046,peptide hormone binding,Ghrhr
+rat,molecular_function,GO:0017046,peptide hormone binding,Ghsr
+rat,molecular_function,GO:0017046,peptide hormone binding,Gipr
+rat,molecular_function,GO:0017046,peptide hormone binding,Glp1r
+rat,molecular_function,GO:0017046,peptide hormone binding,Glp2r
+rat,molecular_function,GO:0017046,peptide hormone binding,Hcrtr1
+rat,molecular_function,GO:0017046,peptide hormone binding,Hcrtr2
+rat,molecular_function,GO:0017046,peptide hormone binding,Ide
+rat,molecular_function,GO:0017046,peptide hormone binding,Il23r
+rat,molecular_function,GO:0017046,peptide hormone binding,Inhba
+rat,molecular_function,GO:0017046,peptide hormone binding,Lepr
+rat,molecular_function,GO:0017046,peptide hormone binding,Lhcgr
+rat,molecular_function,GO:0017046,peptide hormone binding,Mc3r
+rat,molecular_function,GO:0017046,peptide hormone binding,Mc4r
+rat,molecular_function,GO:0017046,peptide hormone binding,Npr1
+rat,molecular_function,GO:0017046,peptide hormone binding,Npr2
+rat,molecular_function,GO:0017046,peptide hormone binding,Npr3
+rat,molecular_function,GO:0017046,peptide hormone binding,Npy4r
+rat,molecular_function,GO:0017046,peptide hormone binding,Oxtr
+rat,molecular_function,GO:0017046,peptide hormone binding,Prlhr
+rat,molecular_function,GO:0017046,peptide hormone binding,Prlr
+rat,molecular_function,GO:0017046,peptide hormone binding,Pth1r
+rat,molecular_function,GO:0017046,peptide hormone binding,Pth2r
+rat,molecular_function,GO:0017046,peptide hormone binding,Rxfp2
+rat,molecular_function,GO:0017046,peptide hormone binding,Sctr
+rat,molecular_function,GO:0017046,peptide hormone binding,Slc40a1
+rat,molecular_function,GO:0017046,peptide hormone binding,Vipr1
+rat,molecular_function,GO:0017046,peptide hormone binding,Vipr2
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Adcyap1
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Cck
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Fyn
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Ghrh
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Gria1
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Jak2
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Lep
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Pth
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Pthlh
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Ptpn11
+rat,molecular_function,GO:0051428,peptide hormone receptor binding,Vip

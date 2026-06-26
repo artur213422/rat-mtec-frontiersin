@@ -1,0 +1,97 @@
+[[dataset]]
+dataset_id = "mouse_gse85"
+dataset_name = "mouse GSE85"
+file = "GSE85_series_matrix.txt"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "B7hi mTEC B6/129 wt1",
+    "B7hi mTEC B6/129 wt2",
+    "B7hi mTEC B6/129 wt3",
+]
+
+ko_samples = [
+    "B7hi mTEC B6/129 aire-/- 1",
+    "B7hi mTEC B6/129 aire-/- 2",
+    "B7hi mTEC B6/129 aire-/- 3",
+]
+
+
+[[dataset]]
+dataset_id = "mouse_gse2585"
+dataset_name = "mouse GSE2585"
+file = "GSE2585_series_matrix.txt"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "WT-CD80hi-mTEC-sample1",
+    "WT-CD80hi-mTEC-sample2",
+]
+
+ko_samples = [
+    "AIRE-ko-CD80hi-mTEC-sample1",
+    "AIRE-ko-CD80hi-mTEC-sample2",
+]
+
+
+[[dataset]]
+dataset_id = "mouse_gse14365"
+dataset_name = "mouse GSE14365"
+file = "GSE14365_series_matrix.txt"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "wt_1",
+    "wt_2",
+    "wt_3",
+]
+
+ko_samples = [
+    "Aireko_1",
+    "Aireko_2",
+]
+
+
+[[dataset]]
+dataset_id = "mouse_gseGSE33878"
+dataset_name = "mouse GSE33878"
+file = "GSE33878_series_matrix.txt"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "F1  Aire WT MEC rep1",
+    "F1  Aire WT MEC rep2",
+    "F1  Aire WT MEC rep3",
+]
+
+ko_samples = [
+    "F1  Aire KO MEC rep1",
+    "F1  Aire KO MEC rep2",
+    "F1  Aire KO MEC rep3",
+]
+
+
+[[dataset]]
+dataset_id = "rat_mtec_high"
+dataset_name = "rat mTEC high"
+file = "mtec_high.csv"
+species = "rat"
+age_weeks = 4
+data_processing_pipeline = "rat"
+
+control_samples = [
+    "ctrl1",
+    "ctrl2",
+    "ctrl3"
+]
+
+ko_samples = [
+    "ko1",
+    "ko2",
+    "ko3"
+]
+

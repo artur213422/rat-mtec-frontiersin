@@ -5,38 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc1f655e-3a88-4e29-b084-3a8b61c946d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/analysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/converted/GSE2585_II_mtec_hi_converted.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/annotation_conversion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/cleanup_datasets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/utils/annotations_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/utils/cleanup_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/cleaned_data/summary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/GPL1261-56135.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/GPL6246-18741.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/GPL81-57556.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/platform_annotation_table/MRK_List1.rpt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mouse/raw_data/GSE85_series_matrix.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/rat/annotation_tables/GENES_RAT_for_rgd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/rat/annotation_tables/mart_export_for_ens.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/rat/annotation_tables/source" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/rat/cleaned_data/summary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/rat/sdk/gene_symbol_cleanup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/rat/sdk/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/rat/sdk/rat_to_mouse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/HOM_AllOrganism.rpt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/summary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/mapped/rat/summary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/sdk/helpers/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/sdk/map_mouse_orthologs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shared_orthologs/sdk/map_rat_orthologs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shared_sdk/gene_symbol_cleaning_tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/bootstrap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/datasets.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/analysers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/dataframe_ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/excel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/analysers/deg_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/analysers/deg_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gene_pattern_extraction/methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gene_pattern_extraction/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gene_pattern_extraction/save_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gsea/gsea.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gsea/io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gsea/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gsea/rnk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/gsea/save_result.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/feratures/math/statistics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/models/dataset_metadata/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/models/dataset_metadata/ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/models/gene_expression_result/gene_expression_result.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/models/gene_expression_result/ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/paths.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/types/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/types/enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/generic_cleanup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/models/ortholog_mapping_result/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/models/ortholog_mapping_result/ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/models/preprocessing_result/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/models/preprocessing_result/ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/antigen_presentation_comparison/01_pick_go_pathways.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/antigen_presentation_comparison/02_run_gsea.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/antigen_presentation_comparison/internal/methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/chemokine_expression_pattern/01_extract_chemokine_gene_sets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/chemokine_expression_pattern/02_analyse_chemokine_expression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/general_statistics/01_calculate_general_stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/kallikreins_expression_pattern/01_extract_kallikrein_gene_sets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/kallikreins_expression_pattern/02_analyse_kallikrein_expression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/peptide_hormone_pattern/01_pick_go_pathways.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/peptide_hormone_pattern/02_run_gsea.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exploration/whole_gsea/01_run_reactome_gsea.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource_processing/03_prepare_reactome_pathways.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/analysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/annotation_conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/pipelines/mouse_dataset_pipeline/01_annotation_conversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/cleanup_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/pipelines/mouse_dataset_pipeline/02_cleanup_mouse_datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/utils/annotations_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/mouse_array_annotations_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mouse/cleaned_data/sdk/utils/cleanup_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mouse/cleaned_data/summary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rat/cleaned_data/summary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rat/sdk/gene_symbol_cleanup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/pipelines/rat_dataset_pipeline/01_cleanup_rat_gene_symbols.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rat/sdk/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/rat_ens_and_rgb_conversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rat/sdk/rat_to_mouse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/GSE14365_cleaned_mapped_rat_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/GSE2585_II_mtec_hi_cleaned_mapped_rat_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/GSE2585_I_cleaned_mapped_rat_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/GSE2585_cleaned_mapped_rat_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/GSE33878_cleaned_mapped_rat_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/GSE85_cleaned_mapped_rat_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/mouse/summary" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/rat/mtec_high_mapped_mouse_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/rat/mtec_low_mapped_mouse_orthologs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/mapped/rat/summary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/sdk/helpers/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/orthology_mapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/sdk/map_mouse_orthologs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/pipelines/mouse_dataset_pipeline/03_map_mouse_orthologs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_orthologs/sdk/map_rat_orthologs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/pipelines/rat_dataset_pipeline/02_map_rat_orthologs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shared_sdk/gene_symbol_cleaning_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_preprocessing/internal/gene_symbol_cleaning_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +82,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -67,6 +104,29 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.01_annotation_conversion.executor": "Run",
+    "Python.01_calculate_general_stats.executor": "Run",
+    "Python.01_cleanup_rat_gene_symbols.executor": "Run",
+    "Python.01_dd.executor": "Run",
+    "Python.01_download_references.executor": "Run",
+    "Python.01_download_resources.executor": "Run",
+    "Python.01_extract_chemokine_gene_sets.executor": "Run",
+    "Python.01_extract_kallikrein_gene_sets.executor": "Run",
+    "Python.01_extract_kallikreins_gene_sets.executor": "Run",
+    "Python.01_pick_go_pathways (1).executor": "Run",
+    "Python.01_pick_go_pathways.executor": "Run",
+    "Python.01_run_reactome_gsea.executor": "Run",
+    "Python.01_run_whole_gsea.executor": "Run",
+    "Python.02_analyse_chemokine_expression.executor": "Run",
+    "Python.02_analyse_kallikrein_expression.executor": "Run",
+    "Python.02_cleanup_mouse_datasets.executor": "Run",
+    "Python.02_go.executor": "Run",
+    "Python.02_map_rat_orthologs.executor": "Run",
+    "Python.02_prepare_go_pathways (1).executor": "Run",
+    "Python.02_prepare_go_pathways.executor": "Run",
+    "Python.02_run_gsea (1).executor": "Run",
+    "Python.02_run_gsea.executor": "Run",
+    "Python.03_map_mouse_orthologs.executor": "Run",
     "Python.annotation_conversion.executor": "Run",
     "Python.celaning_utils.executor": "Run",
     "Python.clean_mouse_data.executor": "Run",
@@ -74,31 +134,159 @@
     "Python.cleanup_data.executor": "Run",
     "Python.cleanup_datasets.executor": "Run",
     "Python.convert_to_ortologs.executor": "Run",
+    "Python.enums.executor": "Run",
     "Python.gene_symbol_cleaning_tools.executor": "Run",
+    "Python.gsea.executor": "Run",
     "Python.main.executor": "Run",
     "Python.map_mouse_orthologs.executor": "Run",
+    "Python.pca.executor": "Run",
+    "Python.ssw.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "G:/10. ÜLIÕPILASED/Artur/9. Review/analysis/data/shared_orthologs"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "G:/10. ÜLIÕPILASED/Artur/9. Review/analysis/src/resource_processing/internal",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\shared_orthologs" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\cleaned_data\converted" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\platform_annotation_table" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\rat\raw_data" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\cleaned_data" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\resource_processing\internal" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\analysis\kallikreins_expression_pattern\kallikreins_lists" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\exploration\kallikreins_expression_pattern" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\standardized\rat" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\standardized\mtec_low_rat" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\shared_orthologs\sdk" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\mouse\cleaned_data\sdk\utils" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\rat\sdk" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\rat\annotation_tables" />
-      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\shared_sdk" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\common\feratures" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\resource_processing" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\common" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\common\feratures\gene_pattern_extraction" />
+      <recent name="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\data\processed\rat" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.01_calculate_general_stats">
+    <configuration name="01_calculate_general_stats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/exploration/general_statistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\exploration\general_statistics\01_calculate_general_stats.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="01_download_resources" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/resource_processing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/resource_processing/01_download_resources.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="01_pick_go_pathways (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/exploration/peptide_hormone_pattern" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/exploration/peptide_hormone_pattern/01_pick_go_pathways.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="01_run_reactome_gsea" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/exploration/whole_gsea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="G:\10. ÜLIÕPILASED\Artur\9. Review\analysis\src\exploration\whole_gsea\01_run_reactome_gsea.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02_run_gsea" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/exploration/peptide_hormone_pattern" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/exploration/peptide_hormone_pattern/02_run_gsea.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.01_calculate_general_stats" />
+        <item itemvalue="Python.01_run_reactome_gsea" />
+        <item itemvalue="Python.01_download_resources" />
+        <item itemvalue="Python.02_run_gsea" />
+        <item itemvalue="Python.01_pick_go_pathways (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -116,5 +304,24 @@
       <updated>1780916776161</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/PCA/models.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/data_preprocessing/internal/rat_ens_and_rgb_conversion.py</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/data_preprocessing/internal/rat_ens_and_rgb_conversion.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
