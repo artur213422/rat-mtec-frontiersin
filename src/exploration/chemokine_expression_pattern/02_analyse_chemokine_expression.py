@@ -3,57 +3,43 @@ from pathlib import Path
 import polars as pl
 
 from src.common.analysers import genotype_comparison
-from src.common.models.dataset_metadata.model import DatasetCatalog
-from src.common.models.dataset_metadata.ops import build_dataset_catalog
-from src.common.models.gene_expression_result.gene_expression_result import GeneExpressionResult
-from src.common.paths import resolve_dir_from_root, resolve_file_from_root
-from dataclasses import asdict
+from src.common.paths import (
+    resolve_dir_from_root,
+    resolve_file_from_root,
+)
 
 ##########################################################################################
 #                                       PREPARE DATA
 ##########################################################################################
 
-source: Path = resolve_dir_from_root("data/standardized")
+kallikreins_file: Path = resolve_file_from_root(
+    "data/analysis/kallikrein_expression_pattern/"
+    "kallikrein_lists/kallikreins.csv"
+)
 
-all_chemokines_file: Path = resolve_file_from_root("data/analysis/chemokine_expression_pattern/chemokine_lists/chemokines_per_dataset.csv")
+kallikreins_df: pl.DataFrame = pl.read_csv(
+    kallikreins_file,
+    schema_overrides={
+        "ortholog_id": pl.String,
+    },
+)
 
-datasets: DatasetCatalog = build_dataset_catalog()
-
-output_file: Path = resolve_dir_from_root("data/analysis/chemokine_expression_pattern/results") / "gene_expression_results.csv"
-
-##########################################################################################
-#                                       PREPARE DATA
-##########################################################################################
-
-results: list[GeneExpressionResult] = []
-
-for dataset in datasets.datasets:
-    dataset_file: Path = dataset.get_standardized_data_file(source)
-
-    print(f"Reading {dataset_file.name}")
-    dataset_id: str = dataset.dataset_id
-    tec_df: pl.DataFrame = pl.read_csv(dataset_file)
-
-    chemokines_per_dataset: pl.DataFrame = pl.read_csv(all_chemokines_file).filter(pl.col("dataset_id") == dataset_id)
-
-
-
-    for row in chemokines_per_dataset.iter_rows(named=True):
-        ortholog_id: int = row["ortholog_id"]
-
-        result: GeneExpressionResult = genotype_comparison(tec_df, ortholog_id, dataset_id)
-
-        results.append(result)
-
-
-    print("reading")
-
-
+output_file: Path = (
+    resolve_dir_from_root(
+        "data/analysis/kallikrein_expression_pattern/"
+        "kallikrein_lists"
+    )
+    / "analysed_kallikreins.csv"
+)
 
 ##########################################################################################
-#                                       SAVE
+#                                       PROCESS DATA
 ##########################################################################################
 
-results_df = pl.DataFrame(asdict(result) for result in results)
+kallikreins_df = genotype_comparison(kallikreins_df)
 
-results_df.write_csv(output_file)
+##########################################################################################
+#                                           SAVE
+##########################################################################################
+
+kallikreins_df.write_csv(output_file)

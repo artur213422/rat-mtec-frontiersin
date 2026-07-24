@@ -51,7 +51,7 @@ https://www.ensembl.org/biomart/martview/4b392f59783586f3d35d436d27b689ff
 
 - [x] Major Histocompatibility Complex (MHC) & Antigen Presentation comparison
 
-- [ ] TSA comparison
+- [x] TSA comparison
 
 - [ ] Imprinted gene clusters
 
@@ -63,3 +63,10 @@ https://www.ensembl.org/biomart/martview/4b392f59783586f3d35d436d27b689ff
 või ka nt suured vs väikesed geenid. aga see eeldab muidugi jälle kvaliteetse nimekirja olemasolu.
 
   interfeone
+
+
+
+GSE85     = MAS5 / Norm signal; not explicitly log2; treat as linear signal
+GSE2585   = MAS5 signal; not log2; treat as linear signal
+GSE14365  = RMA in R; treat as log2 RMA expression
+GSE33878  = RMA signal; scale not explicitly stated in GEO; treat as ambiguous

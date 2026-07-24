@@ -22,6 +22,7 @@ class OrthologRequest:
 class OrthologSpecies(Enum):
     MOUSE = "mouse, laboratory"
     RAT = "rat"
+    HUMAN = "human"
 
 def split_ortholog_ids(ortholog_id: str) -> list[str]:
     return [

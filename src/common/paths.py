@@ -55,3 +55,15 @@ def resolve_dir_from_root(path: str) -> Path:
 
 
 
+def collect_files_in_folder(folder: Path) -> list[Path]:
+    if not folder.exists():
+        raise FileNotFoundError(f"Folder does not exist: {folder}")
+
+    if not folder.is_dir():
+        raise NotADirectoryError(f"Not a directory: {folder}")
+
+    return sorted(
+        path
+        for path in folder.rglob("*")
+        if path.is_file()
+    )

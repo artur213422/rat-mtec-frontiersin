@@ -1,21 +1,13 @@
 import math
-import re
 import statistics
-from typing import Sequence, Any
+from typing import Sequence
 
 import polars as pl
 
+from src.common.dataframe_ops import get_genotype_expression_values
 from src.common.types.enums import Genotypes
 
 
-def get_genotype_expression_values(row: dict[str, Any], gt: Genotypes) -> list[float]:
-    pattern = re.compile(rf"^{re.escape(gt.value)}\d+$")
-
-    return [
-        float(value)
-        for col, value in row.items()
-        if pattern.fullmatch(col) and value is not None
-    ]
 
 
 def calc_welch_t_rank(control_values: Sequence[float], case_values: Sequence[float]) -> float | None:
@@ -56,6 +48,74 @@ def calculate_rnk_matrix(df: pl.DataFrame) -> pl.DataFrame:
 
         control_values = get_genotype_expression_values(row, Genotypes.KO)
         case_values = get_genotype_expression_values(row, Genotypes.CTRL)
+
+        rank = calc_welch_t_rank(
+            control_values=control_values,
+            case_values=case_values,
+        )
+
+        if rank is None:
+            continue
+
+        if not math.isfinite(rank):
+            continue
+
+        rows.append(
+            {
+                "gene_symbol": gene_symbol,
+                "rank": rank,
+            }
+        )
+
+    return (
+        pl.DataFrame(
+            rows,
+            schema={
+                "gene_symbol": pl.String,
+                "rank": pl.Float64,
+            },
+        )
+        .unique(subset=["gene_symbol"], keep="first")
+        .sort("rank", descending=True)
+    )
+
+
+
+def calculate_rnk_matrix_rat_special(df: pl.DataFrame) -> pl.DataFrame:
+    required_columns: set[str] = {
+        "has_clean_ortholog",
+        "gene_symbol",
+        "mouse_ortholog_name",
+    }
+
+    missing_columns: set[str] = required_columns - set(df.columns)
+
+    if missing_columns:
+        raise ValueError(f"Missing required columns: {sorted(missing_columns)}")
+
+    df = (
+        df
+        .filter(pl.col("has_clean_ortholog"))
+        .drop("gene_symbol")
+        .rename({"mouse_ortholog_name": "gene_symbol"})
+    )
+
+    rows: list[dict[str, str | float]] = []
+
+    for row in df.iter_rows(named=True):
+        gene_symbol = row.get("gene_symbol")
+
+        if not isinstance(gene_symbol, str):
+            continue
+
+        control_values = get_genotype_expression_values(
+            row,
+            Genotypes.CTRL,
+        )
+        case_values = get_genotype_expression_values(
+            row,
+            Genotypes.KO,
+        )
 
         rank = calc_welch_t_rank(
             control_values=control_values,

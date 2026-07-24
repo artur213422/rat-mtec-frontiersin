@@ -143,6 +143,41 @@ def cleanup_gene_symbol(gene_symbol: str) -> str:
 
 
 
+def collapse_duplicate_genes_by_functionality(df: DataFrame, group_col: str = "Group",) -> tuple[DataFrame, int]:
+    if group_col not in df.columns:
+        raise ValueError(f"Missing column: {group_col}")
+
+    before: int = df.height
+
+    cleaned: DataFrame = (
+        df
+        .with_columns(
+            (
+                pl.col(group_col)
+                .cast(pl.Utf8)
+                .str.to_lowercase()
+                == "coding"
+            )
+            .alias("_is_coding")
+        )
+        .with_columns(
+            pl.col("_is_coding")
+            .any()
+            .over("gene_symbol")
+            .alias("_gene_has_coding")
+        )
+        .filter(
+            ~(
+                pl.col("_gene_has_coding")
+                & ~pl.col("_is_coding")
+            )
+        )
+        .drop(["_is_coding", "_gene_has_coding"])
+    )
+
+    removed: int = before - cleaned.height
+
+    return cleaned, removed
 
 def collapse_duplicate_genes_by_mean(df: DataFrame, se_floor: float = 0.1,) -> tuple[DataFrame, int]:
     before: int = df.height

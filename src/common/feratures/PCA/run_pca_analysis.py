@@ -3,9 +3,10 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 import numpy.typing as npt
-from src.PCA.models import PcaResult, Orientation, ExpressionTable, SampleCoordinates, \
+
+from src.common.feratures.PCA.models import ExpressionTable, Orientation, PcaResult, SampleCoordinates, \
     ExplainedVariance, FeatureLoading
-from src.PCA.utils import extract_sample_names, extract_expression_data
+from src.common.feratures.PCA.utils import extract_expression_data, extract_sample_names
 
 
 def prepare_pca_input(data: pl.DataFrame) -> ExpressionTable:

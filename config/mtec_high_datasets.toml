@@ -1,0 +1,104 @@
+[[dataset]]
+dataset_id = "mouse_gse85"
+dataset_name = "GSE85"
+cel_protocol = "affy"
+annotation_table = "GPL81-57556.txt"
+platform_package = "mgu74av2cdf"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "GSM2444",	"GSM2445",	"GSM2446"
+]
+
+ko_samples = [
+	"GSM2447",	"GSM2448",	"GSM2449"
+]
+
+
+[[dataset]]
+dataset_id = "mouse_gse2585"
+dataset_name = "GSE2585"
+cel_protocol = "affy"
+annotation_table = "GPL81-57556.txt"
+platform_package = "mgu74av2cdf"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "GSM49735",
+    "GSM49736",
+]
+
+ko_samples = [
+    "GSM49731",
+    "GSM49732",
+]
+
+
+[[dataset]]
+dataset_id = "mouse_gse14365"
+dataset_name = "GSE14365"
+cel_protocol = "affy"
+annotation_table = "GPL1261-56135.txt"
+platform_package = "mouse4302cdf"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "GSM359245",
+    "GSM359246",
+    "GSM359247"
+]
+
+ko_samples = [
+    "GSM359248",
+    "GSM359249"
+]
+
+
+
+[[dataset]]
+dataset_id = "mouse_gse33878"
+dataset_name = "GSE33878"
+cel_protocol = "oligo"
+annotation_table = "GPL6246-18741.txt"
+platform_package = "pd.mogene.1.0.st.v1"
+species = "mouse"
+data_processing_pipeline = "mouse"
+
+control_samples = [
+    "GSM838272",
+    "GSM838273",
+    "GSM838274",
+]
+
+ko_samples = [
+    "GSM838275",
+    "GSM838276",
+    "GSM838277",
+]
+
+
+[[dataset]]
+dataset_id = "rat_mtec_high"
+dataset_name = "rat mTEC high"
+platform_package = "pd.clariom.s.rat.ht"
+annotation_table = "unset"
+cel_protocol = "oligo"
+species = "rat"
+age_weeks = 4
+data_processing_pipeline = "rat"
+
+control_samples = [
+    "ctrl1",
+    "ctrl2",
+    "ctrl3"
+]
+
+ko_samples = [
+    "ko1",
+    "ko2",
+    "ko3"
+]
+

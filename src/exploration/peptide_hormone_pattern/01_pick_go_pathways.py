@@ -3,8 +3,9 @@ from pathlib import Path
 
 import polars as pl
 
+from src.common.file_io import read_gmt_file
 from src.common.paths import find_file_in_project, resolve_dir_from_root
-from src.reference_processing.internal.enums import Namespace
+from src.resource_processing.pathways_for_gsea.internal.enums import Namespace
 
 ##########################################################################################
 #                                       PREPARE DATA
@@ -16,6 +17,7 @@ output_dir: Path = resolve_dir_from_root(
 output_dir.mkdir(parents=True, exist_ok=True)
 
 go_pathways: Path = find_file_in_project("go_pathway_genes.csv")
+reactome_pathways: Path = find_file_in_project("reactome_pathways.gmt")
 
 search_patterns: list[re.Pattern[str]] = [
     # Core GO peptide/polypeptide hormone terms
@@ -96,6 +98,24 @@ picked_pathway_genes_df = (
     .drop("n_genes")
 )
 
+
+##########################################################################################
+#                               FILTER REACTOME PATHWAYS
+##########################################################################################
+reactome_df: pl.DataFrame = read_gmt_file(reactome_pathways)
+
+pathway_column: str = reactome_df.columns[0]
+
+reactome_apc_pathway_genes_df: pl.DataFrame = (
+    reactome_df
+    .filter(
+        pl.col(pathway_column)
+        .fill_null("")
+        .str.contains(combined_pattern)
+    )
+)
+
+
 ##########################################################################################
 #                                       SAVE
 ##########################################################################################
@@ -115,9 +135,9 @@ unique_pathways_df: pl.DataFrame = (
     .sort(["species", "go_term"])
 )
 
-print("\nPicked peptide hormone pathways:")
-for row in unique_pathways_df.iter_rows(named=True):
-    print(
-        f"{row['species']} | {row['go_term']} | "
-        f"{row['name']} | genes={row['n_genes']}"
-    )
+reactome_output_file: Path = output_dir / "reactome_peptide_hormone_pathway_genes.csv"
+reactome_apc_pathway_genes_df.write_csv(reactome_output_file)
+print(f"Saved: {reactome_output_file}")
+
+
+

@@ -4,12 +4,12 @@ from dataclasses import dataclass
 @dataclass(slots=True)
 class GeneExpressionResult:
     dataset_id: str
-    ortholog_id: int
+    ortholog_id: str
     gene_symbol: str
 
-    ctrl_mean: float
-    ko_mean: float
-    fold_change: float
+    log2_ctrl_mean: float
+    log2_ko_mean: float
+    log2_fold_change: float
 
     ctrl_sd: float
     ko_sd: float

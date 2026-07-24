@@ -9,5 +9,5 @@ class OrthologMappingResult:
     genes_with_no_orthology: int = 0
     rat_polymorphism_count: int = 0
     mouse_polymorphism_count: int = 0
-    mapped_genes_count: int = 0
     genes_with_multiple_orthologs: int = 0
+    genes_with_clean_ortholog_count: int = 0

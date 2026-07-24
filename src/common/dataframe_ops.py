@@ -1,15 +1,28 @@
 import re
-from pathlib import Path
 
+import numpy as np
 import polars as pl
 
 from src.common.models.dataset_metadata.model import DatasetMetadata
+from src.common.types.dataset import FloatMatrix
 from src.common.types.enums import Genotypes
+from src.common.utils.col_names import GENE_SYMBOL_COLUMN, ORTHOLOG_ID_COLUMN
+from src.common.utils.dataframe_ops_helpers import _combine_datasets_with_nulls
 
-ID_COLUMNS: tuple[str, str] = ("gene_symbol", "ortholog_id")
 
+def get_custom_genotype_expression_values(row: dict[str, object], pattern: str) -> list[float]:
+    compiled_pattern: re.Pattern[str] = re.compile(
+        rf"^{re.escape(pattern)}\d+$",
+        flags=re.IGNORECASE,
+    )
 
-def get_genotype_expression_values(row: dict[str, object], gt: Genotypes) -> list[float]:
+    return [
+        float(value)
+        for col, value in row.items()
+        if compiled_pattern.fullmatch(col) and value is not None
+    ]
+
+def get_genotype_expression_values(row: dict[str, object], gt: Genotypes,) -> list[float]:
     pattern = re.compile(rf"^{gt.value}\d+$")
 
     return [
@@ -19,110 +32,64 @@ def get_genotype_expression_values(row: dict[str, object], gt: Genotypes) -> lis
     ]
 
 
-def _get_genotype_columns(df: pl.DataFrame, gt: Genotypes) -> list[str]:
-    pattern: re.Pattern[str] = re.compile(rf"^{re.escape(gt.value)}\d+$")
 
-    return [
-        column
-        for column in df.columns
-        if pattern.fullmatch(column) is not None
-    ]
-
-def _build_dataset_frame(metadata: DatasetMetadata, ctrl_start_index: int, ko_start_index: int) -> tuple[pl.DataFrame, int, int, list[str], list[str]]:
-    file: Path = metadata.get_standardized_data_file()
-    df: pl.DataFrame = pl.read_csv(file)
-
-    missing_id_columns: list[str] = [
-        column for column in ID_COLUMNS
-        if column not in df.columns
-    ]
-
-    if missing_id_columns:
-        raise ValueError(
-            f"{metadata.dataset_id}: missing columns: {missing_id_columns}"
-        )
-
-    ctrl_cols: list[str] = _get_genotype_columns(df, Genotypes.CTRL)
-    ko_cols: list[str] = _get_genotype_columns(df, Genotypes.KO)
-
-    if not ctrl_cols:
-        raise ValueError(f"{metadata.dataset_id}: no CTRL columns found")
-
-    if not ko_cols:
-        raise ValueError(f"{metadata.dataset_id}: no KO columns found")
-
-    rename_map: dict[str, str] = {}
-
-    new_ctrl_cols: list[str] = []
-    for old_col in ctrl_cols:
-        new_col: str = f"ctrl{ctrl_start_index}"
-        rename_map[old_col] = new_col
-        new_ctrl_cols.append(new_col)
-        ctrl_start_index += 1
-
-    new_ko_cols: list[str] = []
-    for old_col in ko_cols:
-        new_col = f"ko{ko_start_index}"
-        rename_map[old_col] = new_col
-        new_ko_cols.append(new_col)
-        ko_start_index += 1
-
-    selected_df: pl.DataFrame = (
-        df
-        .select([*ID_COLUMNS, *ctrl_cols, *ko_cols])
-        .rename(rename_map)
-    )
-
-    return selected_df, ctrl_start_index, ko_start_index, new_ctrl_cols, new_ko_cols
 
 
 def combine_datasets_with_nulls(datasets: list[DatasetMetadata]) -> pl.DataFrame:
-    if not datasets:
-        return pl.DataFrame(
-            schema={
-                "gene_symbol": pl.Utf8,
-                "ortholog_id": pl.Utf8,
-            }
-        )
+    """
+    Combine datasets by gene_symbol, but keep ortholog_id.
 
-    frames: list[pl.DataFrame] = []
+    Join key:
+        gene_symbol
 
-    ctrl_index: int = 1
-    ko_index: int = 1
+    Output:
+        gene_symbol, ortholog_id, ctrl..., ko...
+    """
+    return _combine_datasets_with_nulls(
+        datasets=datasets,
+        join_columns=(GENE_SYMBOL_COLUMN,),
+        use_clean_orthologs=False,
+        keep_gene_symbol_audit=False,
+        keep_ortholog_id_audit=True,
+    )
 
-    all_ctrl_cols: list[str] = []
-    all_ko_cols: list[str] = []
 
-    for metadata in datasets:
-        frame, ctrl_index, ko_index, ctrl_cols, ko_cols = _build_dataset_frame(
-            metadata=metadata,
-            ctrl_start_index=ctrl_index,
-            ko_start_index=ko_index,
-        )
+def combine_ortholog_datasets_with_nulls(
+    datasets: list[DatasetMetadata],
+) -> pl.DataFrame:
+    """
+    Combine datasets by clean ortholog_id.
 
-        frames.append(frame)
-        all_ctrl_cols.extend(ctrl_cols)
-        all_ko_cols.extend(ko_cols)
+    Join key:
+        ortholog_id
 
-    combined: pl.DataFrame = frames[0]
+    Output:
+        ortholog_id, gene_symbol, ctrl..., ko...
+    """
+    return _combine_datasets_with_nulls(
+        datasets=datasets,
+        join_columns=(ORTHOLOG_ID_COLUMN,),
+        use_clean_orthologs=True,
+        keep_gene_symbol_audit=True,
+        keep_ortholog_id_audit=False,
+    )
 
-    for frame in frames[1:]:
-        combined = combined.join(
-            frame,
-            on=list(ID_COLUMNS),
-            how="full",
-            coalesce=True,
-        )
 
-    print_null_gene_summary(combined)
-    return combined.select([*ID_COLUMNS, *all_ctrl_cols, *all_ko_cols])
-
-def print_null_gene_summary(data: pl.DataFrame) -> None:
+def print_null_gene_summary(data: pl.DataFrame, id_columns: tuple[str, ...]) -> None:
     sample_cols: list[str] = [
         column
         for column in data.columns
-        if column not in ID_COLUMNS
+        if column not in id_columns
+        and column != GENE_SYMBOL_COLUMN
+        and column != ORTHOLOG_ID_COLUMN
+        and not column.endswith("_gene_symbol")
+        and not column.endswith("_ortholog_id")
     ]
+
+    if not sample_cols:
+        print(f"Total genes: {data.height}")
+        print("No sample columns found")
+        return
 
     non_null_value_count: pl.Expr = pl.sum_horizontal(
         pl.col(sample_cols).is_not_null().cast(pl.Int64)
@@ -146,3 +113,64 @@ def print_null_gene_summary(data: pl.DataFrame) -> None:
     print(f"Genes containing nulls: {genes_with_nulls}")
     print(f"Fully populated genes: {fully_populated_genes}")
     print(f"Genes with less than 5 values: {genes_with_less_than_5_values}")
+
+
+def to_log2(data: pl.DataFrame, selected_col: str) -> pl.DataFrame:
+    return data.with_columns(
+        pl.col(selected_col)
+        .log(base=2)
+        .alias(selected_col)
+    )
+
+
+def to_linear(data: pl.DataFrame, selected_col: str) -> pl.DataFrame:
+    return data.with_columns(
+        pl.lit(2.0)
+        .pow(pl.col(selected_col))
+        .alias(selected_col)
+    )
+
+def extract_matrix(data: pl.DataFrame, gt: Genotypes) -> FloatMatrix:
+    rows: list[list[float]] = []
+
+    for row in data.iter_rows(named=True):
+        values: list[float] = []
+
+        match gt:
+            case Genotypes.KO:
+                values = get_genotype_expression_values(row=row, gt=Genotypes.KO)
+
+            case Genotypes.CTRL:
+                values = get_genotype_expression_values(row=row, gt=Genotypes.CTRL)
+
+            case Genotypes.ALL:
+                ctrl_values: list[float] = get_genotype_expression_values(row=row, gt=Genotypes.CTRL)
+
+                ko_values = get_genotype_expression_values(row=row, gt=Genotypes.KO)
+
+                values = [
+                    *ctrl_values,
+                    *ko_values,
+                ]
+
+            case _:
+                raise ValueError(f"Unsupported genotype: {gt}")
+
+        rows.append(values)
+
+    if not rows:
+        raise ValueError("Cannot extract a matrix from an empty DataFrame.")
+
+    expected_sample_count: int = len(rows[0])
+
+    if expected_sample_count == 0:
+        raise ValueError(f"No expression columns found for genotype {gt}.")
+
+    for row_index, values in enumerate(rows):
+        if len(values) != expected_sample_count:
+            raise ValueError("All genes must have the same number of expression values. Row 0 has {expected_sample_count}, but row {row_index} has {len(values)}.")
+
+    matrix: FloatMatrix = np.asarray(rows, dtype=np.float64)
+
+
+    return matrix

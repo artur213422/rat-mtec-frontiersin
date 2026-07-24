@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-
+from src.common.types.dataset import GeneReference
 
 
 @dataclass(slots=True)

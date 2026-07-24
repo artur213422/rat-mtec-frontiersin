@@ -21,6 +21,7 @@ def build_dataset_catalog() -> DatasetCatalog:
     datasets: list[DatasetMetadata] = [
         _parse_dataset_metadata(raw_dataset)
         for raw_dataset in raw_datasets
+        if raw_dataset["dataset_id"] != "mouse_gse14365"
     ]
 
     return DatasetCatalog(datasets=datasets)
@@ -28,8 +29,11 @@ def build_dataset_catalog() -> DatasetCatalog:
 
 def _parse_dataset_metadata(raw_dataset: dict[str, Any]) -> DatasetMetadata:
     return DatasetMetadata(
+        cel_protocol=raw_dataset["cel_protocol"],
+        dataset_name=raw_dataset["dataset_name"],
+        annotation_table_file=raw_dataset["annotation_table"],
         dataset_id =raw_dataset["dataset_id"],
-        file=Path(str(raw_dataset["file"])),
+        platform_package=raw_dataset["platform_package"],
         species=Species(str(raw_dataset["species"])),
         ctrl_cols=[str(col) for col in raw_dataset["control_samples"]],
         ko_cols=[str(col) for col in raw_dataset["ko_samples"]],
