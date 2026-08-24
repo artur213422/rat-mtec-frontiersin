@@ -67,7 +67,10 @@ class AnnotationResult:
 
 def annotate_expression_matrix(annotation_table_file: Path, expression_matrix: Path) -> AnnotationResult:
 
-    matrix: pl.DataFrame = read_gsm_file(expression_matrix)
+    try:
+        matrix: pl.DataFrame = read_gsm_file(expression_matrix)
+    except ValueError:
+        matrix: pl.DataFrame = pl.read_csv(expression_matrix, separator="\t")
 
     print(f"Processing: {expression_matrix.stem}")
 

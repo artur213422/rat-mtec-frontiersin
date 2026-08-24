@@ -3,11 +3,10 @@ import re
 import numpy as np
 import polars as pl
 
-from src.common.models.dataset_metadata.model import DatasetMetadata
+from src.common.dataset_catalog.internals.types import DatasetMetadata
 from src.common.types.dataset import FloatMatrix
 from src.common.types.enums import Genotypes
 from src.common.utils.col_names import GENE_SYMBOL_COLUMN, ORTHOLOG_ID_COLUMN
-from src.common.utils.dataframe_ops_helpers import _combine_datasets_with_nulls
 
 
 def get_custom_genotype_expression_values(row: dict[str, object], pattern: str) -> list[float]:
@@ -32,47 +31,27 @@ def get_genotype_expression_values(row: dict[str, object], gt: Genotypes,) -> li
     ]
 
 
+def get_genotype_col_names(tec_df: pl.DataFrame, gt: Genotypes,) -> list[str]:
+    prefix: str = gt.value.lower()
+
+    matching_columns: list[str] = [
+        column
+        for column in tec_df.columns
+        if column.lower().startswith(prefix)
+    ]
+
+    if not matching_columns:
+        raise ValueError(
+            f"No columns found for genotype {gt!r}. "
+            f"Expected columns starting with {prefix!r}. "
+            f"Available columns: {tec_df.columns}"
+        )
+
+    return matching_columns
 
 
 
-def combine_datasets_with_nulls(datasets: list[DatasetMetadata]) -> pl.DataFrame:
-    """
-    Combine datasets by gene_symbol, but keep ortholog_id.
 
-    Join key:
-        gene_symbol
-
-    Output:
-        gene_symbol, ortholog_id, ctrl..., ko...
-    """
-    return _combine_datasets_with_nulls(
-        datasets=datasets,
-        join_columns=(GENE_SYMBOL_COLUMN,),
-        use_clean_orthologs=False,
-        keep_gene_symbol_audit=False,
-        keep_ortholog_id_audit=True,
-    )
-
-
-def combine_ortholog_datasets_with_nulls(
-    datasets: list[DatasetMetadata],
-) -> pl.DataFrame:
-    """
-    Combine datasets by clean ortholog_id.
-
-    Join key:
-        ortholog_id
-
-    Output:
-        ortholog_id, gene_symbol, ctrl..., ko...
-    """
-    return _combine_datasets_with_nulls(
-        datasets=datasets,
-        join_columns=(ORTHOLOG_ID_COLUMN,),
-        use_clean_orthologs=True,
-        keep_gene_symbol_audit=True,
-        keep_ortholog_id_audit=False,
-    )
 
 
 def print_null_gene_summary(data: pl.DataFrame, id_columns: tuple[str, ...]) -> None:

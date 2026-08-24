@@ -46,8 +46,8 @@ def calculate_rnk_matrix(df: pl.DataFrame) -> pl.DataFrame:
         if not isinstance(gene_symbol, str):
             continue
 
-        control_values = get_genotype_expression_values(row, Genotypes.KO)
-        case_values = get_genotype_expression_values(row, Genotypes.CTRL)
+        control_values = get_genotype_expression_values(row, Genotypes.CTRL)
+        case_values = get_genotype_expression_values(row, Genotypes.KO)
 
         rank = calc_welch_t_rank(
             control_values=control_values,
@@ -79,6 +79,48 @@ def calculate_rnk_matrix(df: pl.DataFrame) -> pl.DataFrame:
         .sort("rank", descending=True)
     )
 
+def get_rnk_from_precalulated_source( df: pl.DataFrame) -> pl.DataFrame:
+    required_columns: set[str] = {
+        "gene_symbol",
+        "ranking_statistic",
+    }
+
+    missing_columns: set[str] = required_columns - set(df.columns)
+
+    if missing_columns:
+        raise ValueError(f"Missing required columns: {sorted(missing_columns)}")
+
+    duplicate_genes: pl.DataFrame = (
+        df
+        .group_by("gene_symbol")
+        .len()
+        .filter(pl.col("len") > 1)
+    )
+
+    if duplicate_genes.height > 0:
+        raise ValueError("Duplicate gene symbols found in precalculated ranking:\n"f"{duplicate_genes.head(20)}")
+
+    return (
+        df
+        .select(
+            pl.col("gene_symbol")
+            .cast(pl.String)
+            .str.strip_chars(),
+            pl.col("ranking_statistic")
+            .cast(pl.Float64),
+        )
+        .filter(
+            pl.col("gene_symbol").is_not_null()
+            & (pl.col("gene_symbol") != "")
+            & pl.col("ranking_statistic").is_not_null()
+            & pl.col("ranking_statistic").is_not_nan()
+            & pl.col("ranking_statistic").is_finite()
+        )
+        .sort(
+            "ranking_statistic",
+            descending=True,
+        )
+    )
 
 
 def calculate_rnk_matrix_rat_special(df: pl.DataFrame) -> pl.DataFrame:

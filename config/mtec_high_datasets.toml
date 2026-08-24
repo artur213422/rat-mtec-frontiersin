@@ -1,5 +1,5 @@
 [[dataset]]
-dataset_id = "mouse_gse85"
+dataset_id = "mouse_gse85_mtec_high"
 dataset_name = "GSE85"
 cel_protocol = "affy"
 annotation_table = "GPL81-57556.txt"
@@ -17,7 +17,7 @@ ko_samples = [
 
 
 [[dataset]]
-dataset_id = "mouse_gse2585"
+dataset_id = "mouse_gse2585_mtec_high"
 dataset_name = "GSE2585"
 cel_protocol = "affy"
 annotation_table = "GPL81-57556.txt"
@@ -36,30 +36,9 @@ ko_samples = [
 ]
 
 
-[[dataset]]
-dataset_id = "mouse_gse14365"
-dataset_name = "GSE14365"
-cel_protocol = "affy"
-annotation_table = "GPL1261-56135.txt"
-platform_package = "mouse4302cdf"
-species = "mouse"
-data_processing_pipeline = "mouse"
-
-control_samples = [
-    "GSM359245",
-    "GSM359246",
-    "GSM359247"
-]
-
-ko_samples = [
-    "GSM359248",
-    "GSM359249"
-]
-
-
 
 [[dataset]]
-dataset_id = "mouse_gse33878"
+dataset_id = "mouse_gse33878_mtec_high"
 dataset_name = "GSE33878"
 cel_protocol = "oligo"
 annotation_table = "GPL6246-18741.txt"

@@ -16,6 +16,7 @@ class HeatmapStyle:
 
 
     vcenter: float
+    show_row_labels: bool = True
     center_color: Colors | None = None
     nan_cell_color: Colors | None = None
     vmax: float | None = None

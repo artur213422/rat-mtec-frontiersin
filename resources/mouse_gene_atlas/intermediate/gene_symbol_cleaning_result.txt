@@ -1,0 +1,6 @@
+dataset_name: TSA extraction
+total_gene_count: 45101
+dropped_invalid_count: 5437
+dropped_duplicates_count: 18068
+unresolved_identifiers: 0
+cleaned_genes_count: 20599

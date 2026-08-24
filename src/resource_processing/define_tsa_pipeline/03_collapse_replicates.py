@@ -14,7 +14,7 @@ from src.resource_processing.define_tsa_pipeline.internal.tissue_extraction impo
 
 expression_matrix_file: Path = try_find_file_in_project("GSE10246_picked_tissues_matrix.csv")
 
-output: Path = resolve_dir_from_root("resources/mouse_gene_atlas/standardized") / "standardized_tissues_matrix.csv"
+output: Path = resolve_dir_from_root("resources/mouse_gene_atlas/intermediate") / "replicate_averaged_tissue_matrix.csv"
 picked_tissue_file = try_find_file_in_project("picked_tissues.json")
 ##########################################################################################
 #                                       PROCESS DATA

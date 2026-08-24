@@ -1,6 +1,5 @@
 from matplotlib.axes import Axes
 from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
-from matplotlib.figure import Figure
 from matplotlib.image import AxesImage
 
 from src.common.feratures.visualization.heatmap.heatmap_models import HeatmapSpec
@@ -38,6 +37,8 @@ def create_heatmap(ax: Axes, spec: HeatmapSpec) -> None:
         spec.data.matrix,
         cmap=cmap,
         norm=norm,
+        aspect="auto",
+        interpolation="nearest",
     )
 
     create_scalebar(
@@ -52,7 +53,6 @@ def create_heatmap(ax: Axes, spec: HeatmapSpec) -> None:
         rotation=90,
     )
 
-    ax.set_yticks(range(len(spec.data.row_labels)))
-    ax.set_yticklabels(spec.data.row_labels)
-
-    return ax
+    if spec.style.show_row_labels:
+        ax.set_yticks(range(len(spec.data.row_labels)))
+        ax.set_yticklabels(spec.data.row_labels)

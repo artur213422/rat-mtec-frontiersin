@@ -295,6 +295,7 @@
 ### RNA and microarray
 
 * **Platform:** Applied Biosystems/Thermo Fisher Clariom S Rat HT Array.
+* Rat is still Affymetrix-derived microarray technology
 * **Array type:** `Clariom_S_Rat_HT`.
 * **Bioconductor platform package:** `pd.clariom.s.rat.ht`.
 * **Analysis type:** Gene-level expression.
