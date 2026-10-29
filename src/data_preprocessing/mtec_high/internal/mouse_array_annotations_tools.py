@@ -5,25 +5,6 @@ from polars import DataFrame
 
 
 
-def fix_GSE33878(df: DataFrame) -> DataFrame:
-    cleaned_symbols: list[str | None] = []
-
-    for gene_symbol in df["gene_symbol"]:
-        if gene_symbol is None:
-            cleaned_symbols.append(None)
-            continue
-
-        parts = [part.strip() for part in gene_symbol.split("//")]
-
-        if len(parts) < 2:
-            cleaned_symbols.append(None)
-            continue
-
-        cleaned_symbols.append(parts[1])
-
-    return df.with_columns(
-        pl.Series("gene_symbol", cleaned_symbols)
-    )
 
 
 def extract_gene_symbols_from_assignment(gene_assignment: str | None) -> str | None:

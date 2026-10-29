@@ -4,6 +4,7 @@ import polars as pl
 from src.common.dataset_catalog.api.get_datasets import get_rat_tec_high
 from src.common.dataset_catalog.internals.types import DatasetMetadata
 from src.common.paths import find_file_in_project, resolve_dir_from_root
+from src.data_preprocessing.mtec_high.internal.attach_chromosome_data import attach_chromosome_data
 from src.data_preprocessing.mtec_high.internal.gene_symbol_cleaning_tools import drop_invalid_values, cleanup_gene_symbol, \
     unify_gene_symbol_splitters, collapse_duplicate_genes_by_mean, remove_unsolved_genes, is_unique, \
     collapse_duplicate_genes_by_functionality
@@ -22,8 +23,8 @@ rat_dataset: DatasetMetadata = get_rat_tec_high()
 
 
 
-output: Path = resolve_dir_from_root("data/mtec_high/raw/intermediate/cleaned_names_expression_matrix/rat")
-source_file: Path = resolve_dir_from_root("data/mtec_high/raw/intermediate/annotated_expression_matrix/rat") / "rat_mtec_high.csv"
+output: Path = resolve_dir_from_root("data/mtec_high/source/intermediate/cleaned_names_expression_matrix/rat")
+source_file: Path = resolve_dir_from_root("data/mtec_high/source/intermediate/annotated_expression_matrix/rat") / "rat_mtec_high.csv"
 
 
 ##########################################################################################
@@ -38,6 +39,7 @@ tec_df: pl.DataFrame = pl.read_csv(source_file)
 
 result.total_gene_count = tec_df.height
 
+tec_df = attach_chromosome_data(tec_df)
 
 ### Unify
 tec_df = unify_gene_symbol_splitters(tec_df)
@@ -54,9 +56,7 @@ for gene in tec_df["gene_symbol"]:
     cleaned_gene: str = cleanup_gene_symbol(gene)
     cleaned_symbols.append(cleaned_gene)
 
-tec_df = tec_df.with_columns(
-    pl.Series("gene_symbol", cleaned_symbols),
-)
+tec_df = tec_df.with_columns(pl.Series("gene_symbol", cleaned_symbols),)
 
 ## Process RGD ######
 df_rgb_conversion_table = pl.read_csv(
@@ -109,7 +109,20 @@ result.cleaned_genes_count = tec_df.height
 #                                       SAVE
 ##########################################################################################
 
-selected_cols: list[str] = ["gene_symbol","ctrl1","ctrl2","ctrl3","ko1","ko2","ko3"]
+selected_cols: list[str] = [
+    "gene_symbol",
+    "chromosome",
+    "strand",
+    "start",
+    "stop",
+    "ctrl1",
+    "ctrl2",
+    "ctrl3",
+    "ko1",
+    "ko2",
+    "ko3",
+]
+
 tec_df = tec_df.select(selected_cols)
 
 cleaned_output_file: Path = output / f"{rat_dataset.dataset_id}.csv"

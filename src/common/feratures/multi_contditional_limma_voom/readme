@@ -1,0 +1,4 @@
+This is generic multi conditional limma voom
+Use it for RNA seq for example ifna vs ctrl + other interferons
+
+Python's MultiLimmaVoomInput shows what input it needs

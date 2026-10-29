@@ -1,0 +1,47 @@
+{
+  "canvas": {
+    "width_mm": 180.0,
+    "height_mm": 190.0,
+    "origin": "top-left"
+  },
+  "order": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "panels": {
+    "A": {
+      "name": "A",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 92.0,
+      "height": 93.0,
+      "color": "#000000"
+    },
+    "B": {
+      "name": "B",
+      "x": 92.0,
+      "y": 0.0,
+      "width": 88.0,
+      "height": 78.0,
+      "color": "#FF7F27"
+    },
+    "C": {
+      "name": "C",
+      "x": 0.0,
+      "y": 93.0,
+      "width": 92.0,
+      "height": 97.0,
+      "color": "#22B14C"
+    },
+    "D": {
+      "name": "D",
+      "x": 92.0,
+      "y": 93.0,
+      "width": 88.0,
+      "height": 97.0,
+      "color": "#ED1C24"
+    }
+  }
+}

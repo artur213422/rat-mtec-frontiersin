@@ -6,10 +6,17 @@ from src.common.types.enums import Species, CellPopulation
 
 @dataclass(frozen=True, slots=True)
 class DatasetMetadata:
+    # Original names in raw/intermediate matrices, e.g. GSM2444.
+    original_control_samples: list[str]
+    original_ko_samples: list[str]
+
+
     annotation_table_file: str
     dataset_name: str
     dataset_id: str
     platform_package: str
+    annotation_package : str
+
     cel_protocol: str
     species: Species
     ctrl_cols: list[str]
@@ -46,11 +53,16 @@ class DatasetMetadata:
         df: pl.DataFrame = self.get_standardized_df(root)
 
         if "has_clean_ortholog" not in df.columns:
-            raise ValueError(
-                f"{self.dataset_id}: missing required column 'has_clean_ortholog'"
-            )
+            raise ValueError(f"{self.dataset_id}: missing required column 'has_clean_ortholog'")
 
         return df.filter(pl.col("has_clean_ortholog"))
 
 
+    def get_control_group(self) -> tuple[str, ...]:
+
+        return tuple(self.ctrl_cols)
+
+    def get_ko_group(self) -> tuple[str, ...]:
+
+        return tuple(self.ko_cols)
 

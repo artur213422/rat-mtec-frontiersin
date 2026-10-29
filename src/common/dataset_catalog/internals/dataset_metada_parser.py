@@ -7,19 +7,11 @@ from src.common.paths import find_file_in_project
 from src.common.types.enums import CellPopulation, Species
 
 
-MTEC_HIGH_DATASET_CONFIG_FILE_NAME: Final[str] = (
-    "mtec_high_datasets.toml"
-)
-MTEC_LOW_DATASET_CONFIG_FILE_NAME: Final[str] = (
-    "mtec_low_datasets.toml"
-)
+MTEC_HIGH_DATASET_CONFIG_FILE_NAME: Final[str] = ("mtec_high_datasets.toml")
+MTEC_LOW_DATASET_CONFIG_FILE_NAME: Final[str] = ("mtec_low_datasets.toml")
 
-MTEC_HIGH_DATASET_CONFIG_PATH: Final[Path] = find_file_in_project(
-    MTEC_HIGH_DATASET_CONFIG_FILE_NAME
-)
-MTEC_LOW_DATASET_CONFIG_PATH: Final[Path] = find_file_in_project(
-    MTEC_LOW_DATASET_CONFIG_FILE_NAME
-)
+MTEC_HIGH_DATASET_CONFIG_PATH: Final[Path] = find_file_in_project(MTEC_HIGH_DATASET_CONFIG_FILE_NAME)
+MTEC_LOW_DATASET_CONFIG_PATH: Final[Path] = find_file_in_project(MTEC_LOW_DATASET_CONFIG_FILE_NAME)
 
 _CONFIG_FILE_BY_POPULATION: Final[dict[CellPopulation, Path]] = {
     CellPopulation.MTEC_HIGH: MTEC_HIGH_DATASET_CONFIG_PATH,
@@ -27,20 +19,14 @@ _CONFIG_FILE_BY_POPULATION: Final[dict[CellPopulation, Path]] = {
 }
 
 
-def _get_config_path(
-    population: CellPopulation,
-) -> Path:
+def _get_config_path(population: CellPopulation) -> Path:
     try:
         return _CONFIG_FILE_BY_POPULATION[population]
     except KeyError as error:
-        raise ValueError(
-            f"Unsupported cell population: {population!r}"
-        ) from error
+        raise ValueError(f"Unsupported cell population: {population!r}") from error
 
 
-def _read_toml_datasets(
-    config_path: Path,
-) -> list[dict[str, Any]]:
+def _read_toml_datasets(config_path: Path,) -> list[dict[str, Any]]:
     """Read and validate [[dataset]] entries from a TOML file."""
     with config_path.open(mode="rb") as file:
         config: dict[str, Any] = tomllib.load(file)
@@ -48,31 +34,20 @@ def _read_toml_datasets(
     raw_datasets: object = config.get("dataset")
 
     if not isinstance(raw_datasets, list):
-        raise ValueError(
-            f"{config_path} must contain one or more "
-            "[[dataset]] sections."
-        )
+        raise ValueError(f"{config_path} must contain one or more [[dataset]] sections.")
 
     datasets: list[dict[str, Any]] = []
 
     for index, raw_dataset in enumerate(raw_datasets):
         if not isinstance(raw_dataset, dict):
-            raise TypeError(
-                f"Dataset entry {index} in {config_path} "
-                "must be a TOML table."
-            )
+            raise TypeError(f"Dataset entry {index} in {config_path} must be a TOML table.")
 
         datasets.append(raw_dataset)
 
     return datasets
 
 
-def _require_string(
-    dataset: dict[str, Any],
-    key: str,
-    *,
-    config_path: Path,
-) -> str:
+def _require_string(dataset: dict[str, Any], key: str, *, config_path: Path) -> str:
     """Read a required string field from a dataset table."""
     value: object = dataset.get(key)
 
@@ -82,20 +57,12 @@ def _require_string(
             "<unknown>",
         )
 
-        raise ValueError(
-            f"Dataset {dataset_id!r} in {config_path} "
-            f"must define a non-empty string field {key!r}."
-        )
+        raise ValueError(f"Dataset {dataset_id!r} in {config_path} must define a non-empty string field {key!r}.")
 
     return value
 
 
-def _require_string_list(
-    dataset: dict[str, Any],
-    key: str,
-    *,
-    config_path: Path,
-) -> list[str]:
+def _require_string_list(dataset: dict[str, Any], key: str, *, config_path: Path) -> list[str]:
     """Read a required list of strings from a dataset table."""
     value: object = dataset.get(key)
 
@@ -105,10 +72,7 @@ def _require_string_list(
             "<unknown>",
         )
 
-        raise ValueError(
-            f"Dataset {dataset_id!r} in {config_path} "
-            f"must define {key!r} as a list."
-        )
+        raise ValueError(f"Dataset {dataset_id!r} in {config_path} must define {key!r} as a list.")
 
     if not all(isinstance(item, str) for item in value):
         dataset_id = dataset.get(
@@ -116,19 +80,12 @@ def _require_string_list(
             "<unknown>",
         )
 
-        raise TypeError(
-            f"All entries in {key!r} for dataset "
-            f"{dataset_id!r} must be strings."
-        )
+        raise TypeError(f"All entries in {key!r} for dataset {dataset_id!r} must be strings.")
 
     return list(value)
 
 
-def _parse_species(
-    value: str,
-    *,
-    dataset_id: str,
-) -> Species:
+def _parse_species(value: str, *, dataset_id: str) -> Species:
     """Convert a TOML species string into a Species enum."""
     try:
         return Species(value.lower())
@@ -137,16 +94,10 @@ def _parse_species(
             member.value for member in Species
         )
 
-        raise ValueError(
-            f"Dataset {dataset_id!r} has unsupported species "
-            f"{value!r}. Supported values: {supported}."
-        ) from error
+        raise ValueError(f"Dataset {dataset_id!r} has unsupported species {value!r}. Supported values: {supported}.") from error
 
 
-def get_datasets(
-    species: Species,
-    population: CellPopulation,
-) -> list[DatasetMetadata]:
+def get_datasets(species: Species, population: CellPopulation) -> list[DatasetMetadata]:
     """
     Load datasets for one species and cell population.
 
@@ -180,6 +131,16 @@ def get_datasets(
             continue
 
         dataset: DatasetMetadata = DatasetMetadata(
+            original_control_samples=_require_string_list(
+                raw_dataset,
+                "original_control_samples",
+                config_path=config_path,
+            ),
+            original_ko_samples=_require_string_list(
+                raw_dataset,
+                "original_ko_samples",
+                config_path=config_path,
+            ),
             annotation_table_file=_require_string(
                 raw_dataset,
                 "annotation_table",
@@ -194,6 +155,11 @@ def get_datasets(
             platform_package=_require_string(
                 raw_dataset,
                 "platform_package",
+                config_path=config_path,
+            ),
+            annotation_package=_require_string(
+                raw_dataset,
+                "annotation_package",
                 config_path=config_path,
             ),
             cel_protocol=_require_string(

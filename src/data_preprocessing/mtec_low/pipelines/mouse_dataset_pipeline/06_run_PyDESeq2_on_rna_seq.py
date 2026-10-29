@@ -29,7 +29,7 @@ out_folder: Path = resolve_dir_from_root("data/mtec_low/standardized/mouse")
 for dataset in mouse_datasets:
     result: PreprocessingResult = PreprocessingResult(dataset.dataset_name)
 
-    if dataset.dataset_name != "GSE205410" and dataset.dataset_name != "GSE222285":
+    if dataset.dataset_name != "GSE205410":
         print(f"Skipping {dataset.dataset_name}")
         continue
 

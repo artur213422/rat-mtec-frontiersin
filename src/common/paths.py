@@ -32,9 +32,7 @@ def find_file_in_project(file_name: str, root: Path = PROJECT_ROOT) -> Path:
 def resolve_file_from_root(path: str) -> Path:
     resolved_path: Path = PROJECT_ROOT / path
     if not resolved_path.exists():
-        raise FileNotFoundError(
-            f"File does not exist: {resolved_path}"
-        )
+        raise FileNotFoundError(f"File does not exist: {resolved_path}")
 
     return resolved_path.resolve()
 
@@ -42,14 +40,10 @@ def resolve_dir_from_root(path: str) -> Path:
     resolved_path: Path = PROJECT_ROOT / path
 
     if not resolved_path.exists():
-        raise FileNotFoundError(
-            f"Directory does not exist: {resolved_path}"
-        )
+        raise FileNotFoundError(f"Directory does not exist: {resolved_path}")
 
     if not resolved_path.is_dir():
-        raise NotADirectoryError(
-            f"Path exists but is not a directory: {resolved_path}"
-        )
+        raise NotADirectoryError(f"Path exists but is not a directory: {resolved_path}")
 
     return resolved_path.resolve()
 

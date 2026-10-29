@@ -8,7 +8,6 @@ import polars as pl
 from pathlib import Path
 
 from src.common.feratures.gsm_handling.gsm_io import get_annotation_table, read_gsm_file
-from src.common.paths import find_file_in_project
 
 
 def get_sample_names(file_path: Path) -> list[str]:
@@ -70,7 +69,10 @@ def annotate_expression_matrix(annotation_table_file: Path, expression_matrix: P
     try:
         matrix: pl.DataFrame = read_gsm_file(expression_matrix)
     except ValueError:
-        matrix: pl.DataFrame = pl.read_csv(expression_matrix, separator="\t")
+        if expression_matrix.suffix.lower() == ".csv":
+            matrix = pl.read_csv(expression_matrix)
+        else:
+            matrix = pl.read_csv(expression_matrix, separator="\t")
 
     print(f"Processing: {expression_matrix.stem}")
 

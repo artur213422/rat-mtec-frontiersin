@@ -28,7 +28,7 @@ def standardize_sample_group_col_names(df: DataFrame, ctrl_cols: list[str], ko_c
 
     keep_cols: list[str] = [
         col
-        for col in ["ID_REF", "gene_symbol", *ctrl_cols, *ko_cols]
+        for col in ["ID_REF", "gene_symbol", "chromosome", "strand", "start", "stop", *ctrl_cols, *ko_cols]
         if col in df.columns
     ]
 

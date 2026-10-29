@@ -1,0 +1,11 @@
+
+
+WINDOW_MIN_SIZE: int = 3
+
+WINDOW_MAX_SIZE: int = 10
+
+PERMUTATIONS: int = 10000
+
+
+P_VAL_THRESHOLD: float = 0.05
+LOG2_FC_THRESHOLD: float = 1

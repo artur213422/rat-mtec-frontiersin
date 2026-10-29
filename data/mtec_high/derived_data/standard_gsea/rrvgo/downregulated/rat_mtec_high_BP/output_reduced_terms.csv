@@ -1,0 +1,224 @@
+"go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0042742",6,"GO:0042742",14.0331081329683,354,"defense response to bacterium","defense response to bacterium",0.82562331838565,0.385636363636364,0
+"GO:0051607",6,"GO:0042742",8.42975745341736,299,"defense response to virus","defense response to bacterium",0.830434977578475,0.394,0.622
+"GO:0009615",6,"GO:0042742",8.42975745341736,391,"response to virus","defense response to bacterium",0.847291479820628,0.389363636363636,0.641
+"GO:0031349",8,"GO:0031349",8.42975745341736,573,"positive regulation of defense response","positive regulation of defense response",0.774775784753363,0.385,0
+"GO:0050830",6,"GO:0042742",8.34748876335101,126,"defense response to Gram-positive bacterium","defense response to bacterium",0.842479820627803,0.438545454545455,0.89
+"GO:0048525",34,"GO:0048525",7.64372112979198,79,"negative regulation of viral process","negative regulation of viral process",0.93177130044843,0.245,0
+"GO:0019730",7,"GO:0019730",6.55541018582491,146,"antimicrobial humoral response","antimicrobial humoral response",0.793053811659193,0.415772727272727,0
+"GO:0034340",26,"GO:0034340",6.46057054957512,91,"response to type I interferon","response to type I interferon",0.770766816143498,0.39,0
+"GO:0006959",7,"GO:0019730",6.11501327029264,249,"humoral immune response","antimicrobial humoral response",0.845582959641256,0.394409090909091,0.934
+"GO:0019731",7,"GO:0019730",5.45205088823292,59,"antibacterial humoral response","antimicrobial humoral response",0.802255605381166,0.454363636363636,0.929
+"GO:0071357",26,"GO:0034340",5.45205088823292,85,"cellular response to type I interferon","response to type I interferon",0.772215246636771,0.3851,0.991
+"GO:0008015",10,"GO:0008015",5.45205088823292,603,"blood circulation","blood circulation",0.938408071748879,0.3754,0
+"GO:0045071",34,"GO:0048525",5.45205088823292,49,"negative regulation of viral genome replication","negative regulation of viral process",0.933174887892377,0.239,0.97
+"GO:0002833",5,"GO:0002833",5.45205088823292,443,"positive regulation of response to biotic stimulus","positive regulation of response to biotic stimulus",0.788726457399103,0.219909090909091,0
+"GO:0031638",25,"GO:0031638",5.42065082017216,61,"zymogen activation","zymogen activation",0.95772197309417,0.4964,0
+"GO:0045088",5,"GO:0002833",5.38153433581342,503,"regulation of innate immune response","positive regulation of response to biotic stimulus",0.725349775784753,0.211636363636364,0.947
+"GO:0050792",34,"GO:0048525",5.36565343188605,143,"regulation of viral process","negative regulation of viral process",0.945910313901345,0.237,0.954
+"GO:0007218",15,"GO:0007218",5.21545830703701,113,"neuropeptide signaling pathway","neuropeptide signaling pathway",0.88942600896861,0.612333333333333,0
+"GO:0140374",6,"GO:0042742",5.12537165466583,77,"antiviral innate immune response","defense response to bacterium",0.808349775784753,0.449636363636364,0.551
+"GO:0061844",7,"GO:0019730",5.10152227749253,111,"antimicrobial humoral immune response mediated by antimicrobial peptide","antimicrobial humoral response",0.798636771300448,0.430818181818182,0.972
+"GO:0045069",34,"GO:0048525",5.08588348272874,80,"regulation of viral genome replication","negative regulation of viral process",0.947403587443946,0.2362,0.916
+"GO:0060337",26,"GO:0034340",5.05755375523993,83,"type I interferon-mediated signaling pathway","response to type I interferon",0.737914798206278,0.3672,0.99
+"GO:0051384",29,"GO:0051384",4.96327365437785,327,"response to glucocorticoid","response to glucocorticoid",0.878582959641256,0.3715,0
+"GO:0070106",26,"GO:0034340",4.9041955005434,15,"interleukin-27-mediated signaling pathway","response to type I interferon",0.866497757847534,0.5036,0.525
+"GO:0003013",10,"GO:0008015",4.83690905928752,634,"circulatory system process","blood circulation",0.93829596412556,0.3764,0.989
+"GO:0001819",3,"GO:0001819",4.80907253310211,548,"positive regulation of cytokine production","positive regulation of cytokine production",0.835322869955157,0.293153846153846,0
+"GO:0035456",26,"GO:0034340",4.78496009040804,56,"response to interferon-beta","response to type I interferon",0.890834080717489,0.4475,0.572
+"GO:0031960",29,"GO:0051384",4.78009991297968,365,"response to corticosteroid","response to glucocorticoid",0.877551569506726,0.368875,0.988
+"GO:0035458",26,"GO:0034340",4.61413226568631,43,"cellular response to interferon-beta","response to type I interferon",0.892372197309417,0.4467,0.561
+"GO:0048545",29,"GO:0051384",4.55747281918707,569,"response to steroid hormone","response to glucocorticoid",0.87267264573991,0.381,0.93
+"GO:0002218",5,"GO:0002833",4.55747281918707,337,"activation of innate immune response","positive regulation of response to biotic stimulus",0.717547085201794,0.201909090909091,0.97
+"GO:0008217",10,"GO:0008015",4.50030783203524,236,"regulation of blood pressure","blood circulation",0.89927802690583,0.3812,0.878
+"GO:1903900",34,"GO:0048525",4.38251716925931,112,"regulation of viral life cycle","negative regulation of viral process",0.946569506726457,0.2324,0.935
+"GO:0050795",19,"GO:0050795",4.12993817360498,125,"regulation of behavior","regulation of behavior",0.876349775784753,0.298545454545455,0
+"GO:0051673",6,"GO:0042742",3.57315882120364,9,"disruption of plasma membrane integrity in another organism","defense response to bacterium",0.946730941704036,0.608181818181818,0.454
+"GO:0050829",6,"GO:0042742",3.56712346638271,89,"defense response to Gram-negative bacterium","defense response to bacterium",0.845807174887892,0.449363636363636,0.87
+"GO:0052652",11,"GO:0052652",3.55460813505454,53,"cyclic purine nucleotide metabolic process","cyclic purine nucleotide metabolic process",0.94929596412556,0.3325,0
+"GO:0032108",17,"GO:0032108",3.55460813505454,19,"negative regulation of response to nutrient levels","negative regulation of response to nutrient levels",0.85732735426009,0.273125,0
+"GO:0032096",17,"GO:0032108",3.55460813505454,19,"negative regulation of response to food","negative regulation of response to nutrient levels",0.828816143497758,0.2295,1
+"GO:0002697",7,"GO:0019730",3.49378246706519,429,"regulation of immune effector process","antimicrobial humoral response",0.868022421524664,0.411,0.464
+"GO:0002252",7,"GO:0019730",3.48588264787249,682,"immune effector process","antimicrobial humoral response",0.90719730941704,0.424863636363636,0.488
+"GO:0045089",5,"GO:0002833",3.47557402083006,413,"positive regulation of innate immune response","positive regulation of response to biotic stimulus",0.714219730941704,0.202272727272727,0.989
+"GO:0032496",6,"GO:0042742",3.40858303386186,565,"response to lipopolysaccharide","defense response to bacterium",0.798529147982063,0.394818181818182,0.835
+"GO:0002237",6,"GO:0042742",3.2890087034528,584,"response to molecule of bacterial origin","defense response to bacterium",0.844627802690583,0.390363636363636,0.844
+"GO:0007229",14,"GO:0007229",3.19864009664917,101,"integrin-mediated signaling pathway","integrin-mediated signaling pathway",0.888358744394619,0.7995,0
+"GO:0003073",10,"GO:0008015",3.19428463506471,130,"regulation of systemic arterial blood pressure","blood circulation",0.903869955156951,0.404,0.829
+"GO:0070374",41,"GO:0070374",3.18801271318823,226,"positive regulation of ERK1 and ERK2 cascade","positive regulation of ERK1 and ERK2 cascade",0.828345291479821,0.54875,0
+"GO:0009187",11,"GO:0052652",3.14005767897666,54,"cyclic nucleotide metabolic process","cyclic purine nucleotide metabolic process",0.949071748878924,0.3324,0.989
+"GO:0032095",17,"GO:0032108",3.13200540843521,27,"regulation of response to food","negative regulation of response to nutrient levels",0.837408071748879,0.2285,0.935
+"GO:0002253",7,"GO:0019730",3.0764301175642,615,"activation of immune response","antimicrobial humoral response",0.769914798206278,0.4135,0.608
+"GO:0006576",12,"GO:0006576",3.02324261670906,91,"biogenic amine metabolic process","biogenic amine metabolic process",0.967089686098655,0.383666666666667,0
+"GO:0032479",3,"GO:0001819",3.0081882994584,136,"regulation of type I interferon production","positive regulation of cytokine production",0.872318385650224,0.337461538461538,0.744
+"GO:0001906",4,"GO:0001906",2.9298628460873,221,"cell killing","cell killing",0.990982062780269,0.558,0
+"GO:0050764",9,"GO:0050764",2.9298628460873,124,"regulation of phagocytosis","regulation of phagocytosis",0.912358744394619,0.444055555555556,0
+"GO:0046068",11,"GO:0052652",2.9298628460873,26,"cGMP metabolic process","cyclic purine nucleotide metabolic process",0.949291479820628,0.349,0.956
+"GO:0048521",19,"GO:0050795",2.86075947795841,34,"negative regulation of behavior","regulation of behavior",0.872771300448431,0.327545454545455,0.893
+"GO:0070372",41,"GO:0070374",2.84557981385423,338,"regulation of ERK1 and ERK2 cascade","positive regulation of ERK1 and ERK2 cascade",0.842681614349776,0.5915,0.963
+"GO:0032481",3,"GO:0001819",2.78440871969608,85,"positive regulation of type I interferon production","positive regulation of cytokine production",0.856331838565022,0.321307692307692,0.806
+"GO:0050729",8,"GO:0031349",2.77040232660586,181,"positive regulation of inflammatory response","positive regulation of defense response",0.782708520179372,0.338111111111111,0.858
+"GO:0009308",12,"GO:0006576",2.76649080122307,102,"amine metabolic process","biogenic amine metabolic process",0.966964125560538,0.386,0.992
+"GO:0045824",5,"GO:0002833",2.71374402675912,102,"negative regulation of innate immune response","positive regulation of response to biotic stimulus",0.746690582959641,0.293636363636364,0.795
+"GO:0034284",1,"GO:0034284",2.69489799262889,372,"response to monosaccharide","response to monosaccharide",0.875632286995516,0.350285714285714,0
+"GO:0046883",9,"GO:0050764",2.69489799262889,343,"regulation of hormone secretion","regulation of phagocytosis",0.877255605381166,0.313944444444444,0.589
+"GO:2000252",19,"GO:0050795",2.66021380545367,21,"negative regulation of feeding behavior","regulation of behavior",0.873704035874439,0.284090909090909,0.863
+"GO:0009611",21,"GO:0009611",2.64929616523212,616,"response to wounding","response to wounding",0.875986547085202,0.590666666666667,0
+"GO:0035455",26,"GO:0034340",2.63484802352879,32,"response to interferon-alpha","response to type I interferon",0.896529147982063,0.5079,0.552
+"GO:0031348",8,"GO:0031349",2.60671666605229,315,"negative regulation of defense response","positive regulation of defense response",0.791627802690583,0.410777777777778,0.821
+"GO:0032728",3,"GO:0001819",2.53950274122405,47,"positive regulation of interferon-beta production","positive regulation of cytokine production",0.864479820627803,0.350153846153846,0.747
+"GO:0009190",11,"GO:0052652",2.53950274122405,31,"cyclic nucleotide biosynthetic process","cyclic purine nucleotide metabolic process",0.944582959641256,0.3418,0.964
+"GO:0007631",19,"GO:0050795",2.46845745837831,150,"feeding behavior","regulation of behavior",0.925887892376682,0.323727272727273,0.677
+"GO:0032760",3,"GO:0001819",2.45015457869856,132,"positive regulation of tumor necrosis factor production","positive regulation of cytokine production",0.856838565022422,0.323384615384615,0.803
+"GO:0007584",17,"GO:0032108",2.41139989636239,357,"response to nutrient","negative regulation of response to nutrient levels",0.876461883408072,0.363375,0.67
+"GO:0002758",5,"GO:0002833",2.39772827109007,308,"innate immune response-activating signaling pathway","positive regulation of response to biotic stimulus",0.708112107623318,0.203272727272727,0.961
+"GO:0050727",8,"GO:0031349",2.3818744627237,455,"regulation of inflammatory response","positive regulation of defense response",0.783201793721973,0.299111111111111,0.849
+"GO:0016485",25,"GO:0031638",2.37819012900744,273,"protein processing","zymogen activation",0.954031390134529,0.5038,0.879
+"GO:0060263",40,"GO:0060263",2.37222900160324,16,"regulation of respiratory burst","regulation of respiratory burst",0.937443946188341,0.524,0
+"GO:0032099",17,"GO:0032108",2.37222900160324,18,"negative regulation of appetite","negative regulation of response to nutrient levels",0.814183856502242,0.23075,0.998
+"GO:0032757",3,"GO:0001819",2.35526332473809,67,"positive regulation of interleukin-8 production","positive regulation of cytokine production",0.864107623318386,0.386846153846154,0.77
+"GO:0031640",4,"GO:0001906",2.2694543506894,53,"killing of cells of another organism","cell killing",0.930982062780269,0.558,0.884
+"GO:0006954",8,"GO:0031349",2.2694543506894,937,"inflammatory response","positive regulation of defense response",0.842309417040359,0.329111111111111,0.72
+"GO:0002791",9,"GO:0050764",2.26166750811792,277,"regulation of peptide secretion","regulation of phagocytosis",0.906847533632287,0.315222222222222,0.578
+"GO:0036230",7,"GO:0019730",2.26093969579885,57,"granulocyte activation","antimicrobial humoral response",0.894717488789238,0.571363636363636,0.392
+"GO:0048745",37,"GO:0048745",2.24491640906177,36,"smooth muscle tissue development","smooth muscle tissue development",0.997318385650224,1,0
+"GO:0051412",29,"GO:0051384",2.24491640906177,50,"response to corticosterone","response to glucocorticoid",0.885793721973094,0.4025,0.858
+"GO:1903557",3,"GO:0001819",2.24491640906177,134,"positive regulation of tumor necrosis factor superfamily cytokine production","positive regulation of cytokine production",0.856390134529148,0.321769230769231,0.806
+"GO:0033273",17,"GO:0032108",2.22068550579326,200,"response to vitamin","negative regulation of response to nutrient levels",0.881286995515695,0.382625,0.646
+"GO:0007586",18,"GO:0007586",2.21201627859909,144,"digestion","digestion",0.956582959641256,0.360666666666667,0
+"GO:0032368",9,"GO:0050764",2.20242164830363,171,"regulation of lipid transport","regulation of phagocytosis",0.91709865470852,0.427444444444445,0.559
+"GO:0046888",9,"GO:0050764",2.20242164830363,106,"negative regulation of hormone secretion","regulation of phagocytosis",0.872757847533632,0.340277777777778,0.531
+"GO:0032680",3,"GO:0001819",2.20242164830363,226,"regulation of tumor necrosis factor production","positive regulation of cytokine production",0.871017937219731,0.332153846153846,0.754
+"GO:0022600",18,"GO:0007586",2.17704949976636,126,"digestive system process","digestion",0.944538116591928,0.358,0.991
+"GO:0090087",9,"GO:0050764",2.17425020585957,279,"regulation of peptide transport","regulation of phagocytosis",0.911394618834081,0.371833333333333,0.578
+"GO:0042755",19,"GO:0050795",2.14653736599026,66,"eating behavior","regulation of behavior",0.930417040358744,0.354727272727273,0.625
+"GO:0002793",9,"GO:0050764",2.11767839142394,156,"positive regulation of peptide secretion","regulation of phagocytosis",0.889237668161435,0.3215,0.549
+"GO:0002221",5,"GO:0002833",2.11767839142394,297,"pattern recognition receptor signaling pathway","positive regulation of response to biotic stimulus",0.7087533632287,0.204272727272727,0.959
+"GO:0032677",3,"GO:0001819",2.11694009377483,102,"regulation of interleukin-8 production","positive regulation of cytokine production",0.879955156950673,0.406384615384615,0.707
+"GO:0046683",29,"GO:0051384",2.1016188795743,215,"response to organophosphorus","response to glucocorticoid",0.891367713004484,0.617625,0.359
+"GO:1905952",9,"GO:0050764",2.1016188795743,201,"regulation of lipid localization","regulation of phagocytosis",0.918735426008969,0.449833333333333,0.534
+"GO:1903555",3,"GO:0001819",2.09332549051413,229,"regulation of tumor necrosis factor superfamily cytokine production","positive regulation of cytokine production",0.87080269058296,0.331307692307692,0.756
+"GO:0017085",22,"GO:0017085",2.09115013019442,26,"response to insecticide","response to insecticide",0.907282511210762,0.5975,0
+"GO:0019221",26,"GO:0034340",2.09115013019442,519,"cytokine-mediated signaling pathway","response to type I interferon",0.822847533632287,0.3682,0.697
+"GO:0032648",3,"GO:0001819",2.03841033413985,67,"regulation of interferon-beta production","positive regulation of cytokine production",0.880322869955157,0.369538461538462,0.682
+"GO:0031639",25,"GO:0031638",2.03489792421514,27,"plasminogen activation","zymogen activation",0.959582959641256,0.512,0.953
+"GO:0032355",29,"GO:0051384",2.0264934583939,267,"response to estradiol","response to glucocorticoid",0.879363228699552,0.49225,0.662
+"GO:0051591",29,"GO:0051384",2.00993062028768,165,"response to cAMP","response to glucocorticoid",0.880560538116592,0.586125,0.348
+"GO:0009749",1,"GO:0034284",2.00993062028768,343,"response to glucose","response to monosaccharide",0.876529147982063,0.353571428571429,0.989
+"GO:0032094",17,"GO:0032108",2.00993062028768,75,"response to food","negative regulation of response to nutrient levels",0.884170403587444,0.31325,0.614
+"GO:0071827",43,"GO:0071827",1.98615403719743,55,"plasma lipoprotein particle organization","plasma lipoprotein particle organization",0.953726457399103,0.502,0
+"GO:0045471",1,"GO:0034284",1.98615403719743,355,"response to ethanol","response to monosaccharide",0.88062331838565,0.486285714285714,0.559
+"GO:0050777",7,"GO:0019730",1.98615403719743,208,"negative regulation of immune response","antimicrobial humoral response",0.793780269058296,0.475318181818182,0.545
+"GO:0043330",23,"GO:0043330",1.98615403719743,48,"response to exogenous dsRNA","response to exogenous dsRNA",0.895430493273543,0.36675,0
+"GO:0060259",19,"GO:0050795",1.9798310522443,49,"regulation of feeding behavior","regulation of behavior",0.88062331838565,0.266545454545455,0.932
+"GO:0042157",25,"GO:0031638",1.9730952636291,104,"lipoprotein metabolic process","zymogen activation",0.965928251121076,0.7138,0.353
+"GO:0014074",23,"GO:0043330",1.9730952636291,256,"response to purine-containing compound","response to exogenous dsRNA",0.886493273542601,0.5615,0.592
+"GO:0070741",26,"GO:0034340",1.96840850516502,73,"response to interleukin-6","response to type I interferon",0.890704035874439,0.4831,0.583
+"GO:0042415",12,"GO:0006576",1.96840850516502,19,"norepinephrine metabolic process","biogenic amine metabolic process",0.971139013452915,0.431,0.857
+"GO:0060264",40,"GO:0060263",1.95045537789146,7,"regulation of respiratory burst involved in inflammatory response","regulation of respiratory burst",0.740641255605381,0.524,0.952
+"GO:0071496",30,"GO:0071496",1.94921270995694,151,"cellular response to external stimulus","cellular response to external stimulus",0.88147533632287,0.500666666666667,0
+"GO:0002832",5,"GO:0002833",1.94921270995694,135,"negative regulation of response to biotic stimulus","positive regulation of response to biotic stimulus",0.812650224215247,0.304818181818182,0.818
+"GO:0007200",15,"GO:0007218",1.9366951651882,157,"phospholipase C-activating G protein-coupled receptor signaling pathway","neuropeptide signaling pathway",0.886067264573991,0.605333333333333,0.562
+"GO:0002886",7,"GO:0019730",1.9366951651882,71,"regulation of myeloid leukocyte mediated immunity","antimicrobial humoral response",0.886139013452915,0.487181818181818,0.397
+"GO:0090277",9,"GO:0050764",1.93221770460547,152,"positive regulation of peptide hormone secretion","regulation of phagocytosis",0.861251121076233,0.290722222222222,0.548
+"GO:0035902",21,"GO:0009611",1.91877149416951,60,"response to immobilization stress","response to wounding",0.901264573991031,0.762333333333333,0.379
+"GO:0050878",16,"GO:0050878",1.91877149416951,405,"regulation of body fluid levels","regulation of body fluid levels",0.941493273542601,0.667333333333333,0
+"GO:0042119",7,"GO:0019730",1.91877149416951,47,"neutrophil activation","antimicrobial humoral response",0.896542600896861,0.578409090909091,0.385
+"GO:0015669",24,"GO:0015669",1.91877149416951,22,"gas transport","gas transport",0.970780269058296,0.5155,0
+"GO:0009746",1,"GO:0034284",1.91877149416951,357,"response to hexose","response to monosaccharide",0.875946188340807,0.350857142857143,0.995
+"GO:0032107",17,"GO:0032108",1.87833779041833,41,"regulation of response to nutrient levels","negative regulation of response to nutrient levels",0.864358744394619,0.266375,0.952
+"GO:0055088",31,"GO:0055088",1.87195880171529,205,"lipid homeostasis","lipid homeostasis",0.988829596412556,0.37725,0
+"GO:0009743",1,"GO:0034284",1.87195880171529,415,"response to carbohydrate","response to monosaccharide",0.874793721973094,0.351,0.989
+"GO:0097530",7,"GO:0019730",1.86861085672202,151,"granulocyte migration","antimicrobial humoral response",0.920336322869955,0.542636363636364,0.424
+"GO:0046887",9,"GO:0050764",1.86021690524662,198,"positive regulation of hormone secretion","regulation of phagocytosis",0.863094170403587,0.319777777777778,0.56
+"GO:0051051",9,"GO:0050764",1.85560818408658,569,"negative regulation of transport","regulation of phagocytosis",0.893645739910314,0.379444444444444,0.612
+"GO:0045187",33,"GO:0045187",1.85560818408658,35,"regulation of circadian sleep/wake cycle, sleep","regulation of circadian sleep/wake cycle, sleep",0.882968609865471,0.377,0
+"GO:0052803",38,"GO:0052803",1.85350407215415,9,"imidazole-containing compound metabolic process","imidazole-containing compound metabolic process",0.977529147982063,1,0
+"GO:0007204",16,"GO:0050878",1.85350407215415,206,"positive regulation of cytosolic calcium ion concentration","regulation of body fluid levels",0.945991031390135,0.681333333333333,0.493
+"GO:0043903",6,"GO:0042742",1.85350407215415,34,"regulation of biological process involved in symbiotic interaction","defense response to bacterium",0.910775784753363,0.57,0.505
+"GO:0002699",7,"GO:0019730",1.85350407215415,281,"positive regulation of immune effector process","antimicrobial humoral response",0.854417040358744,0.424727272727273,0.447
+"GO:0007612",19,"GO:0050795",1.85350407215415,217,"learning","regulation of behavior",0.916596412556054,0.373727272727273,0.687
+"GO:0006636",11,"GO:0052652",1.85275121696655,63,"unsaturated fatty acid biosynthetic process","cyclic purine nucleotide metabolic process",0.948780269058296,0.5378,0.455
+"GO:0050766",9,"GO:0050764",1.84866980204526,92,"positive regulation of phagocytosis","regulation of phagocytosis",0.892654708520179,0.429222222222222,0.976
+"GO:0042330",13,"GO:0042330",1.84866980204526,463,"taxis","taxis",0.856744394618834,0.376666666666667,0
+"GO:0008211",20,"GO:0008211",1.84590927244196,34,"glucocorticoid metabolic process","glucocorticoid metabolic process",0.968865470852018,0.686666666666667,0
+"GO:0002920",7,"GO:0019730",1.84364060461955,52,"regulation of humoral immune response","antimicrobial humoral response",0.815201793721973,0.404136363636364,0.832
+"GO:0050654",25,"GO:0031638",1.80061374175414,35,"chondroitin sulfate proteoglycan metabolic process","zymogen activation",0.962896860986547,0.7264,0.333
+"GO:0051385",29,"GO:0051384",1.80061374175414,93,"response to mineralocorticoid","response to glucocorticoid",0.888789237668161,0.399875,0.883
+"GO:2000987",41,"GO:0070374",1.77464775795971,10,"positive regulation of behavioral fear response","positive regulation of ERK1 and ERK2 cascade",0.764762331838565,0.562,0.42
+"GO:0055090",31,"GO:0055088",1.74397601540123,47,"acylglycerol homeostasis","lipid homeostasis",0.988695067264574,0.36975,0.882
+"GO:0055123",36,"GO:0055123",1.74190976669569,191,"digestive system development","digestive system development",0.958439461883408,0.597,0
+"GO:0043331",23,"GO:0043330",1.73688399785282,57,"response to dsRNA","response to exogenous dsRNA",0.894291479820628,0.36775,0.988
+"GO:0061760",5,"GO:0002833",1.73094612008289,21,"antifungal innate immune response","positive regulation of response to biotic stimulus",0.826291479820628,0.475454545454545,0.52
+"GO:0019216",20,"GO:0008211",1.72872571482919,409,"regulation of lipid metabolic process","glucocorticoid metabolic process",0.914587443946188,0.545666666666667,0.497
+"GO:1900246",5,"GO:0002833",1.71767538030239,11,"positive regulation of RIG-I signaling pathway","positive regulation of response to biotic stimulus",0.767735426008969,0.371181818181818,0.717
+"GO:0070328",31,"GO:0055088",1.71205070635492,46,"triglyceride homeostasis","lipid homeostasis",0.988739910313901,0.37225,0.876
+"GO:0072488",44,"GO:0072488",1.69078256553834,10,"ammonium transmembrane transport","ammonium transmembrane transport",0.968780269058296,1,0
+"GO:0007168",14,"GO:0007229",1.68722357669264,17,"receptor guanylyl cyclase signaling pathway","integrin-mediated signaling pathway",0.900121076233184,0.7995,0.401
+"GO:1904681",46,"GO:1904681",1.68514789794485,16,"response to 3-methylcholanthrene","response to 3-methylcholanthrene",0.908363228699552,0.5015,0
+"GO:0051048",9,"GO:0050764",1.66637070346398,234,"negative regulation of secretion","regulation of phagocytosis",0.894408071748879,0.339444444444444,0.568
+"GO:0071621",7,"GO:0019730",1.65294678578155,120,"granulocyte chemotaxis","antimicrobial humoral response",0.803076233183857,0.544545454545455,0.46
+"GO:0042749",33,"GO:0045187",1.65294678578155,39,"regulation of circadian sleep/wake cycle","regulation of circadian sleep/wake cycle, sleep",0.881295964125561,0.372333333333333,0.986
+"GO:1903165",46,"GO:1904681",1.64298237794233,17,"response to polycyclic arene","response to 3-methylcholanthrene",0.908062780269058,0.5015,0.997
+"GO:0097006",45,"GO:0097006",1.60535357173508,94,"regulation of plasma lipoprotein particle levels","regulation of plasma lipoprotein particle levels",0.961430493273543,1,0
+"GO:0071825",43,"GO:0071827",1.58151431550056,58,"protein-lipid complex organization","plasma lipoprotein particle organization",0.987399103139013,0.502,0.996
+"GO:1903999",19,"GO:0050795",1.58151431550056,11,"negative regulation of eating behavior","regulation of behavior",0.878322869955157,0.298909090909091,0.825
+"GO:0090276",9,"GO:0050764",1.58151431550056,272,"regulation of peptide hormone secretion","regulation of phagocytosis",0.874811659192825,0.281777777777778,0.577
+"GO:0031016",28,"GO:0031016",1.5706116447707,101,"pancreas development","pancreas development",0.997179372197309,1,0
+"GO:0001666",2,"GO:0001666",1.5706116447707,512,"response to hypoxia","response to hypoxia",0.873730941704036,0.53875,0
+"GO:0000302",1,"GO:0034284",1.5706116447707,307,"response to reactive oxygen species","response to monosaccharide",0.845605381165919,0.535142857142857,0.564
+"GO:0035900",32,"GO:0035900",1.5595272905156,14,"response to isolation stress","response to isolation stress",0.909865470852018,1,0
+"GO:0015850",9,"GO:0050764",1.5595272905156,336,"organic hydroxy compound transport","regulation of phagocytosis",0.96857399103139,0.661777777777778,0.35
+"GO:0071260",30,"GO:0071496",1.5595272905156,149,"cellular response to mechanical stimulus","cellular response to external stimulus",0.866506726457399,0.501,0.998
+"GO:0040011",13,"GO:0042330",1.5595272905156,1434,"locomotion","taxis",0.986152466367713,0.416666666666667,0.875
+"GO:0006935",13,"GO:0042330",1.5595272905156,461,"chemotaxis","taxis",0.823542600896861,0.376666666666667,0.995
+"GO:0002674",8,"GO:0031349",1.5595272905156,13,"negative regulation of acute inflammatory response","positive regulation of defense response",0.817627802690583,0.345888888888889,0.62
+"GO:0060193",39,"GO:0060193",1.55138338345355,13,"positive regulation of lipase activity","positive regulation of lipase activity",0.970690582959641,1,0
+"GO:0002443",7,"GO:0019730",1.55138338345355,457,"leukocyte mediated immunity","antimicrobial humoral response",0.911022421524664,0.446136363636364,0.464
+"GO:0002274",7,"GO:0019730",1.54522323001905,285,"myeloid leukocyte activation","antimicrobial humoral response",0.882995515695067,0.532181818181818,0.442
+"GO:0015671",24,"GO:0015669",1.53745690675278,15,"oxygen transport","gas transport",0.971632286995516,0.5155,0.969
+"GO:0070486",42,"GO:0070486",1.53263886938789,16,"leukocyte aggregation","leukocyte aggregation",0.995739910313901,1,0
+"GO:0050892",18,"GO:0007586",1.52984428125652,47,"intestinal absorption","digestion",0.947780269058296,0.379333333333333,0.927
+"GO:0097017",10,"GO:0008015",1.51834160416886,13,"renal protein absorption","blood circulation",0.958399103139013,0.675,0.427
+"GO:2000846",9,"GO:0050764",1.51834160416886,21,"regulation of corticosteroid hormone secretion","regulation of phagocytosis",0.844730941704036,0.397055555555556,0.479
+"GO:0048678",21,"GO:0009611",1.51059252619492,144,"response to axon injury","response to wounding",0.891578475336323,0.605666666666667,0.849
+"GO:0019369",11,"GO:0052652",1.51059252619492,82,"arachidonate metabolic process","cyclic purine nucleotide metabolic process",0.952659192825112,0.5044,0.458
+"GO:0002922",7,"GO:0019730",1.51059252619492,23,"positive regulation of humoral immune response","antimicrobial humoral response",0.815367713004484,0.44,0.772
+"GO:0030449",7,"GO:0019730",1.51059252619492,26,"regulation of complement activation","antimicrobial humoral response",0.799358744394619,0.349681818181818,0.805
+"GO:1904010",47,"GO:1904010",1.50622600522265,10,"response to Aroclor 1254","response to Aroclor 1254",0.914739910313901,1,0
+"GO:0032102",30,"GO:0071496",1.50622600522265,447,"negative regulation of response to external stimulus","cellular response to external stimulus",0.795654708520179,0.667,0.5
+"GO:0010447",2,"GO:0001666",1.50622600522265,36,"response to acidic pH","response to hypoxia",0.92904932735426,0.587,0.603
+"GO:0062013",11,"GO:0052652",1.50622600522265,191,"positive regulation of small molecule metabolic process","cyclic purine nucleotide metabolic process",0.893542600896861,0.5692,0.482
+"GO:1903367",41,"GO:0070374",1.50622600522265,11,"positive regulation of fear response","positive regulation of ERK1 and ERK2 cascade",0.809964125560538,0.56125,0.422
+"GO:0006956",7,"GO:0019730",1.50622600522265,58,"complement activation","antimicrobial humoral response",0.785887892376682,0.333636363636364,0.877
+"GO:0002753",5,"GO:0002833",1.50622600522265,195,"cytoplasmic pattern recognition receptor signaling pathway","positive regulation of response to biotic stimulus",0.722130044843049,0.233272727272727,0.905
+"GO:0045807",9,"GO:0050764",1.50555520921176,200,"positive regulation of endocytosis","regulation of phagocytosis",0.887735426008969,0.409611111111111,0.856
+"GO:0048149",1,"GO:0034284",1.48891684933041,20,"behavioral response to ethanol","response to monosaccharide",0.844748878923767,0.562,0.452
+"GO:0007632",2,"GO:0001666",1.48188382041596,85,"visual behavior","response to hypoxia",0.865161434977578,0.464,0.623
+"GO:0034341",26,"GO:0034340",1.48188382041596,160,"response to type II interferon","response to type I interferon",0.767556053811659,0.4535,0.629
+"GO:0032722",3,"GO:0001819",1.48188382041596,82,"positive regulation of chemokine production","positive regulation of cytokine production",0.863735426008969,0.408538461538462,0.785
+"GO:0002438",8,"GO:0031349",1.48188382041596,41,"acute inflammatory response to antigenic stimulus","positive regulation of defense response",0.840542600896861,0.367888888888889,0.539
+"GO:0007611",19,"GO:0050795",1.48188382041596,379,"learning or memory","regulation of behavior",0.913112107623318,0.354727272727273,0.728
+"GO:1903531",9,"GO:0050764",1.48188382041596,208,"negative regulation of secretion by cell","regulation of phagocytosis",0.890062780269058,0.339944444444444,0.563
+"GO:0007188",15,"GO:0007218",1.47580559149673,286,"adenylate cyclase-modulating G protein-coupled receptor signaling pathway","neuropeptide signaling pathway",0.878210762331839,0.592333333333333,0.601
+"GO:0035150",16,"GO:0050878",1.47461521417733,218,"regulation of tube size","regulation of body fluid levels",0.944874439461883,0.677333333333333,0.505
+"GO:0050994",20,"GO:0008211",1.45828023003654,80,"regulation of lipid catabolic process","glucocorticoid metabolic process",0.924161434977579,0.563666666666667,0.443
+"GO:0045916",7,"GO:0019730",1.44627848784832,15,"negative regulation of complement activation","antimicrobial humoral response",0.791618834080718,0.360409090909091,0.775
+"GO:0006690",11,"GO:0052652",1.44002949261695,151,"icosanoid metabolic process","cyclic purine nucleotide metabolic process",0.95695067264574,0.5072,0.493
+"GO:0009636",22,"GO:0017085",1.43009201614913,354,"response to toxic substance","response to insecticide",0.887439461883408,0.5975,0.805
+"GO:0050688",6,"GO:0042742",1.40844094847752,65,"regulation of defense response to virus","defense response to bacterium",0.800587443946188,0.454272727272727,0.546
+"GO:0097529",7,"GO:0019730",1.37992902023889,228,"myeloid leukocyte migration","antimicrobial humoral response",0.917659192825112,0.529363636363636,0.441
+"GO:0002526",8,"GO:0031349",1.37930080661295,129,"acute inflammatory response","positive regulation of defense response",0.863125560538117,0.325888888888889,0.587
+"GO:0008306",19,"GO:0050795",1.35838910113706,145,"associative learning","regulation of behavior",0.919538116591928,0.396090909090909,0.657
+"GO:0046058",11,"GO:0052652",1.35228988866902,28,"cAMP metabolic process","cyclic purine nucleotide metabolic process",0.949798206278027,0.3588,0.953
+"GO:0006182",11,"GO:0052652",1.34748223059043,15,"cGMP biosynthetic process","cyclic purine nucleotide metabolic process",0.94552466367713,0.3627,0.925
+"GO:0048617",36,"GO:0055123",1.34233731622439,11,"embryonic foregut morphogenesis","digestive system development",0.965520179372197,0.597,0.806
+"GO:0008542",2,"GO:0001666",1.34233731622439,79,"visual learning","response to hypoxia",0.853349775784753,0.46575,0.619
+"GO:0006953",8,"GO:0031349",1.34233731622439,54,"acute-phase response","positive regulation of defense response",0.872408071748879,0.366666666666667,0.541
+"GO:0019915",27,"GO:0019915",1.3397319698221,104,"lipid storage","lipid storage",0.995161434977578,1,0
+"GO:0042752",33,"GO:0045187",1.3397319698221,130,"regulation of circadian rhythm","regulation of circadian sleep/wake cycle, sleep",0.953578475336323,0.406666666666667,0.883
+"GO:0045913",35,"GO:0045913",1.32269675901394,104,"positive regulation of carbohydrate metabolic process","positive regulation of carbohydrate metabolic process",0.908686098654709,1,0
+"GO:0033500",31,"GO:0055088",1.30353309747746,380,"carbohydrate homeostasis","lipid homeostasis",0.990946188340807,0.49525,0.733
+"GO:0090325",19,"GO:0050795",1.30343309543938,12,"regulation of locomotion involved in locomotory behavior","regulation of behavior",0.88632735426009,0.400272727272727,0.829
+"GO:0071360",23,"GO:0043330",1.30205272959456,18,"cellular response to exogenous dsRNA","response to exogenous dsRNA",0.892807174887892,0.386,0.953
+"GO:0001818",3,"GO:0001819",1.30205272959456,391,"negative regulation of cytokine production","positive regulation of cytokine production",0.846488789237668,0.363538461538461,0.829

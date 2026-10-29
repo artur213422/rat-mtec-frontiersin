@@ -8,17 +8,11 @@ species = "rat"
 age_weeks = 4
 data_processing_pipeline = "rat"
 
-control_samples = [
-    "ctrl1",
-    "ctrl2",
-    "ctrl3"
-]
+original_control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+original_ko_samples = ["ko1", "ko2", "ko3"]
 
-ko_samples = [
-    "ko1",
-    "ko2",
-    "ko3"
-]
+control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+ko_samples = ["ko1", "ko2", "ko3"]
 
 
 [[dataset]]
@@ -30,15 +24,11 @@ platform_package = "mgu74av2cdf"
 species = "mouse"
 data_processing_pipeline = "mouse"
 
-control_samples = [
-    "GSM49737",
-    "GSM49738"
-]
+original_control_samples = ["GSM49737", "GSM49738"]
+original_ko_samples = ["GSM49733", "GSM49734"]
 
-ko_samples = [
-    "GSM49733",
-    "GSM49734"
-]
+control_samples = ["ctrl1", "ctrl2"]
+ko_samples = ["ko1", "ko2"]
 
 
 [[dataset]]
@@ -50,17 +40,11 @@ data_processing_pipeline = "mouse_rnaseq"
 platform_package = "unset"
 annotation_table = "unset"
 
-control_samples = [
-    "ctrl1",
-    "ctrl2",
-    "ctrl3"
-]
+original_control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+original_ko_samples = ["ko1", "ko2", "ko3"]
 
-ko_samples = [
-    "ko1",
-    "ko2",
-    "ko3"
-]
+control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+ko_samples = ["ko1", "ko2", "ko3"]
 
 
 [[dataset]]
@@ -72,22 +56,13 @@ platform_package = "unset"
 annotation_table = "unset"
 data_processing_pipeline = "mouse_rnaseq"
 
-control_samples = [
-    "Aire_1",
-    "Aire_2",
-    "Aire_3",
-    "Aire_4",
-    "Aire_5",
-    "Aire_6",
-    "Aire_7",
-    "Aire_8"
+original_control_samples = [
+    "Aire_1", "Aire_2", "Aire_3", "Aire_4",
+    "Aire_5", "Aire_6", "Aire_7", "Aire_8",
 ]
+original_ko_samples = ["Aire_9", "Aire_10", "Aire_11", "Aire_12"]
 
-ko_samples = [
-    "Aire_9",
-    "Aire_10",
-    "Aire_11",
-    "Aire_12"
-]
-
-
+# This standardized file contains DESeq2 summary statistics only—
+# no per-sample expression columns—so it cannot be used by PADOG.
+control_samples = []
+ko_samples = []

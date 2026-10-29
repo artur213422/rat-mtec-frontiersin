@@ -1,8 +1,8 @@
 from pathlib import Path
 from typing import Any
 
-from src.common.models.dataset_metadata.model import DatasetCatalog, DatasetMetadata
-from src.common.models.dataset_metadata.ops import build_dataset_catalog
+from src.common.dataset_catalog.api.get_datasets import get_mouse_tec_high
+from src.common.dataset_catalog.internals.types import DatasetMetadata
 from src.common.paths import resolve_dir_from_root, find_file_in_project, collect_files_in_folder
 from src.data_preprocessing.mtec_high.internal.R.run_R import run_rscript
 from src.data_preprocessing.mtec_high.pipelines.mouse_dataset_pipeline.interials.helpers import gsm_sample_name_from_cel
@@ -10,10 +10,14 @@ from src.data_preprocessing.mtec_high.pipelines.mouse_dataset_pipeline.interials
 ##########################################################################################
 #                                       PREPARE DATA
 ##########################################################################################
-datasets: DatasetCatalog = build_dataset_catalog()
-mouse_datasets: list[DatasetMetadata] = datasets.get_mouse_datasets()
-raw_cel_folder: Path = resolve_dir_from_root("data/raw/cel_files/mouse")
-output: Path = resolve_dir_from_root("data/raw/intermediate/expression_matrix/mouse")
+mouse_datasets: list[DatasetMetadata] = get_mouse_tec_high()
+
+raw_cel_folder: Path = resolve_dir_from_root("data/mte"
+                                             ""
+                                             ""
+                                             ""
+                                             "c_high/source/cel_files/mouse")
+output: Path = resolve_dir_from_root("data/mtec_high/source/intermediate/expression_matrix/mouse")
 
 r_exe = Path("C:/R/R/bin/Rscript.exe")
 oligo_script: Path = find_file_in_project("cel_to_txt_oligo.R")

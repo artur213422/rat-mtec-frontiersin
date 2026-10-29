@@ -1,0 +1,366 @@
+{
+  "3T3-L1": {
+    "GSM258609": "3T3-L1_01",
+    "GSM258610": "3T3-L1_02"
+  },
+  "adipose_brown": {
+    "GSM258611": "adipose_brown_01",
+    "GSM258612": "adipose_brown_02"
+  },
+  "adipose_white": {
+    "GSM258613": "adipose_white_01",
+    "GSM258614": "adipose_white_02"
+  },
+  "adrenal_gland": {
+    "GSM258615": "adrenal_gland_01",
+    "GSM258616": "adrenal_gland_02"
+  },
+  "amygdala": {
+    "GSM258617": "amygdala_01",
+    "GSM258618": "amygdala_02"
+  },
+  "Baf3": {
+    "GSM258619": "Baf3_01",
+    "GSM258620": "Baf3_02"
+  },
+  "B-cells_marginal_zone": {
+    "GSM258621": "B-cells_marginal_zone_01",
+    "GSM258622": "B-cells_marginal_zone_02"
+  },
+  "bladder": {
+    "GSM258623": "bladder_01",
+    "GSM258624": "bladder_02"
+  },
+  "bone": {
+    "GSM258625": "bone_01",
+    "GSM258626": "bone_02"
+  },
+  "bone_marrow": {
+    "GSM258627": "bone_marrow_01",
+    "GSM258628": "bone_marrow_02"
+  },
+  "C2C12": {
+    "GSM258629": "C2C12_01",
+    "GSM258630": "C2C12_02"
+  },
+  "C3H_10T1_2": {
+    "GSM258631": "C3H_10T1_2_01",
+    "GSM258632": "C3H_10T1_2_02"
+  },
+  "cerebellum": {
+    "GSM258633": "cerebellum_01",
+    "GSM258634": "cerebellum_02"
+  },
+  "cerebral_cortex": {
+    "GSM258635": "cerebral_cortex_01",
+    "GSM258636": "cerebral_cortex_02"
+  },
+  "cerebral_cortex_prefrontal": {
+    "GSM258637": "cerebral_cortex_prefrontal_01",
+    "GSM258638": "cerebral_cortex_prefrontal_02"
+  },
+  "ciliary_bodies": {
+    "GSM258639": "ciliary_bodies_01",
+    "GSM258640": "ciliary_bodies_02"
+  },
+  "common_myeloid_progenitor": {
+    "GSM258641": "common_myeloid_progenitor_01",
+    "GSM258642": "common_myeloid_progenitor_02"
+  },
+  "cornea": {
+    "GSM258643": "cornea_01",
+    "GSM258644": "cornea_02"
+  },
+  "dendritic_cells_lymphoid_CD8a+": {
+    "GSM258645": "dendritic_cells_lymphoid_CD8a+_01",
+    "GSM258646": "dendritic_cells_lymphoid_CD8a+_02"
+  },
+  "dendritic_cells_myeloid_CD8a-": {
+    "GSM258647": "dendritic_cells_myeloid_CD8a-_01",
+    "GSM258648": "dendritic_cells_myeloid_CD8a-_02"
+  },
+  "dendritic_plasmacytoid_B220+": {
+    "GSM258649": "dendritic_plasmacytoid_B220+_01",
+    "GSM258650": "dendritic_plasmacytoid_B220+_02"
+  },
+  "dorsal_root_ganglia": {
+    "GSM258651": "dorsal_root_ganglia_01",
+    "GSM258652": "dorsal_root_ganglia_02"
+  },
+  "dorsal_striatum": {
+    "GSM258653": "dorsal_striatum_01",
+    "GSM258654": "dorsal_striatum_02"
+  },
+  "embryonic_stem_line_Bruce4_p13": {
+    "GSM258655": "embryonic_stem_line_Bruce4_p13_01",
+    "GSM258656": "embryonic_stem_line_Bruce4_p13_02"
+  },
+  "embryonic_stem_line_V26_2_p16": {
+    "GSM258657": "embryonic_stem_line_V26_2_p16_01",
+    "GSM258658": "embryonic_stem_line_V26_2_p16_02"
+  },
+  "epidermis": {
+    "GSM258659": "epidermis_01",
+    "GSM258660": "epidermis_02"
+  },
+  "eyecup": {
+    "GSM258661": "eyecup_01",
+    "GSM258662": "eyecup_02"
+  },
+  "follicular_B-cells": {
+    "GSM258663": "follicular_B-cells_01",
+    "GSM258664": "follicular_B-cells_02"
+  },
+  "granulo_mono_progenitor": {
+    "GSM258665": "granulo_mono_progenitor_01",
+    "GSM258666": "granulo_mono_progenitor_02"
+  },
+  "granulocytes_mac1+gr1+": {
+    "GSM258667": "granulocytes_mac1+gr1+_01",
+    "GSM258668": "granulocytes_mac1+gr1+_02"
+  },
+  "heart": {
+    "GSM258669": "heart_01",
+    "GSM258670": "heart_02"
+  },
+  "hippocampus": {
+    "GSM258671": "hippocampus_01",
+    "GSM258672": "hippocampus_02"
+  },
+  "hypothalamus": {
+    "GSM258673": "hypothalamus_01",
+    "GSM258674": "hypothalamus_02"
+  },
+  "intestine_large": {
+    "GSM258675": "intestine_large_01",
+    "GSM258676": "intestine_large_02"
+  },
+  "intestine_small": {
+    "GSM258677": "intestine_small_01",
+    "GSM258678": "intestine_small_02"
+  },
+  "iris": {
+    "GSM258679": "iris_01",
+    "GSM258680": "iris_02"
+  },
+  "kidney": {
+    "GSM258681": "kidney_01",
+    "GSM258682": "kidney_02"
+  },
+  "lacrimal_gland": {
+    "GSM258683": "lacrimal_gland_01",
+    "GSM258684": "lacrimal_gland_02"
+  },
+  "lens": {
+    "GSM258685": "lens_01",
+    "GSM258686": "lens_02"
+  },
+  "liver": {
+    "GSM258687": "liver_01",
+    "GSM258688": "liver_02"
+  },
+  "lung": {
+    "GSM258689": "lung_01",
+    "GSM258690": "lung_02"
+  },
+  "lymph_nodes": {
+    "GSM258691": "lymph_nodes_01",
+    "GSM258692": "lymph_nodes_02"
+  },
+  "macrophage_bone_marrow_0hr": {
+    "GSM258693": "macrophage_bone_marrow_0hr_01",
+    "GSM258694": "macrophage_bone_marrow_0hr_02"
+  },
+  "macrophage_bone_marrow_24h_LPS": {
+    "GSM258695": "macrophage_bone_marrow_24h_LPS_01",
+    "GSM258696": "macrophage_bone_marrow_24h_LPS_02"
+  },
+  "macrophage_bone_marrow_2hr_LPS": {
+    "GSM258697": "macrophage_bone_marrow_2hr_LPS_01",
+    "GSM258698": "macrophage_bone_marrow_2hr_LPS_02"
+  },
+  "macrophage_bone_marrow_6hr_LPS": {
+    "GSM258699": "macrophage_bone_marrow_6hr_LPS_01",
+    "GSM258700": "macrophage_bone_marrow_6hr_LPS_02"
+  },
+  "macrophage_peri_LPS_thio_0hrs": {
+    "GSM258701": "macrophage_peri_LPS_thio_0hrs_01",
+    "GSM258702": "macrophage_peri_LPS_thio_0hrs_02"
+  },
+  "macrophage_peri_LPS_thio_1hrs": {
+    "GSM258703": "macrophage_peri_LPS_thio_1hrs_01",
+    "GSM258704": "macrophage_peri_LPS_thio_1hrs_02"
+  },
+  "macrophage_peri_LPS_thio_7hrs": {
+    "GSM258705": "macrophage_peri_LPS_thio_7hrs_01",
+    "GSM258706": "macrophage_peri_LPS_thio_7hrs_02"
+  },
+  "mammary_gland__lact": {
+    "GSM258707": "mammary_gland__lact_01",
+    "GSM258708": "mammary_gland__lact_02"
+  },
+  "mammary_gland_non-lactating": {
+    "GSM258709": "mammary_gland_non-lactating_01",
+    "GSM258710": "mammary_gland_non-lactating_02"
+  },
+  "mast_cells": {
+    "GSM258711": "mast_cells_01",
+    "GSM258712": "mast_cells_02"
+  },
+  "mast_cells_IgE": {
+    "GSM258713": "mast_cells_IgE_01",
+    "GSM258714": "mast_cells_IgE_02"
+  },
+  "mast_cells_IgE+antigen_1hr": {
+    "GSM258715": "mast_cells_IgE+antigen_1hr_01",
+    "GSM258716": "mast_cells_IgE+antigen_1hr_02"
+  },
+  "mast_cells_IgE+antigen_6hr": {
+    "GSM258717": "mast_cells_IgE+antigen_6hr_01",
+    "GSM258718": "mast_cells_IgE+antigen_6hr_02"
+  },
+  "mega_erythrocyte_progenitor": {
+    "GSM258719": "mega_erythrocyte_progenitor_01",
+    "GSM258720": "mega_erythrocyte_progenitor_02"
+  },
+  "microglia": {
+    "GSM258721": "microglia_01",
+    "GSM258722": "microglia_02"
+  },
+  "mIMCD-3": {
+    "GSM258723": "mIMCD-3_01",
+    "GSM258724": "mIMCD-3_02"
+  },
+  "min6": {
+    "GSM258725": "min6_01",
+    "GSM258726": "min6_02"
+  },
+  "neuro2a": {
+    "GSM258727": "neuro2a_01",
+    "GSM258728": "neuro2a_02"
+  },
+  "nih_3T3": {
+    "GSM258729": "nih_3T3_01",
+    "GSM258730": "nih_3T3_02"
+  },
+  "NK_cells": {
+    "GSM258731": "NK_cells_01",
+    "GSM258732": "NK_cells_02"
+  },
+  "nucleus_accumbens": {
+    "GSM258733": "nucleus_accumbens_01",
+    "GSM258734": "nucleus_accumbens_02"
+  },
+  "olfactory_bulb": {
+    "GSM258735": "olfactory_bulb_01",
+    "GSM258736": "olfactory_bulb_02"
+  },
+  "osteoblast_day14": {
+    "GSM258737": "osteoblast_day14_01",
+    "GSM258738": "osteoblast_day14_02"
+  },
+  "osteoblast_day21": {
+    "GSM258739": "osteoblast_day21_01",
+    "GSM258740": "osteoblast_day21_02"
+  },
+  "osteoblast_day5": {
+    "GSM258741": "osteoblast_day5_01",
+    "GSM258742": "osteoblast_day5_02"
+  },
+  "osteoclasts": {
+    "GSM258743": "osteoclasts_01",
+    "GSM258744": "osteoclasts_02"
+  },
+  "ovary": {
+    "GSM258745": "ovary_01",
+    "GSM258746": "ovary_02"
+  },
+  "pancreas": {
+    "GSM258747": "pancreas_01",
+    "GSM258748": "pancreas_02"
+  },
+  "pituitary": {
+    "GSM258749": "pituitary_01",
+    "GSM258750": "pituitary_02"
+  },
+  "placenta": {
+    "GSM258751": "placenta_01",
+    "GSM258752": "placenta_02"
+  },
+  "prostate": {
+    "GSM258753": "prostate_01",
+    "GSM258754": "prostate_02"
+  },
+  "RAW_264_7": {
+    "GSM258755": "RAW_264_7_01",
+    "GSM258756": "RAW_264_7_02"
+  },
+  "retina": {
+    "GSM258757": "retina_01",
+    "GSM258758": "retina_02"
+  },
+  "retinal_pigment_epithelium": {
+    "GSM258759": "retinal_pigment_epithelium_01",
+    "GSM258760": "retinal_pigment_epithelium_02"
+  },
+  "salivary_gland": {
+    "GSM258761": "salivary_gland_01",
+    "GSM258762": "salivary_gland_02"
+  },
+  "skeletal_muscle": {
+    "GSM258763": "skeletal_muscle_01",
+    "GSM258764": "skeletal_muscle_02"
+  },
+  "spinal_cord": {
+    "GSM258765": "spinal_cord_01",
+    "GSM258766": "spinal_cord_02"
+  },
+  "spleen": {
+    "GSM258767": "spleen_01",
+    "GSM258768": "spleen_02"
+  },
+  "stem_cells__HSC": {
+    "GSM258769": "stem_cells__HSC_01",
+    "GSM258770": "stem_cells__HSC_02"
+  },
+  "stomach": {
+    "GSM258771": "stomach_01",
+    "GSM258772": "stomach_02"
+  },
+  "T-cells_CD4+": {
+    "GSM258773": "T-cells_CD4+_01",
+    "GSM258774": "T-cells_CD4+_02"
+  },
+  "T-cells_CD8+": {
+    "GSM258775": "T-cells_CD8+_01",
+    "GSM258776": "T-cells_CD8+_02"
+  },
+  "T-cells_foxP3+": {
+    "GSM258777": "T-cells_foxP3+_01",
+    "GSM258778": "T-cells_foxP3+_02"
+  },
+  "testis": {
+    "GSM258779": "testis_01",
+    "GSM258780": "testis_02"
+  },
+  "thymocyte_DP_CD4+CD8+": {
+    "GSM258781": "thymocyte_DP_CD4+CD8+_01",
+    "GSM258782": "thymocyte_DP_CD4+CD8+_02"
+  },
+  "thymocyte_SP_CD4+": {
+    "GSM258783": "thymocyte_SP_CD4+_01",
+    "GSM258784": "thymocyte_SP_CD4+_02"
+  },
+  "thymocyte_SP_CD8+": {
+    "GSM258785": "thymocyte_SP_CD8+_01",
+    "GSM258786": "thymocyte_SP_CD8+_02"
+  },
+  "umbilical_cord": {
+    "GSM258787": "umbilical_cord_01",
+    "GSM258788": "umbilical_cord_02"
+  },
+  "uterus": {
+    "GSM258789": "uterus_01",
+    "GSM258790": "uterus_02"
+  }
+}

@@ -1,3 +1,74 @@
-.idea
-.git
-/data/
+# Ignore all data files unless explicitly included below.
+/data/**
+!/data/**/
+
+# Standardized expression datasets
+!/data/mtec_high/standardized/mouse/*.csv
+!/data/mtec_high/standardized/rat/rat_mtec_high.csv
+!/data/mtec_low/standardized/rat/rat_mtec_low.csv
+
+# Figure 1: GO enrichment tables
+!/data/mtec_high/derived_data/standard_gsea/both_sided_gsea/go_biological_process_gsea.csv
+!/data/mtec_high/derived_data/standard_gsea/both_sided_gsea/go_molecular_function_gsea.csv
+!/data/mtec_high/derived_data/standard_gsea/both_sided_gsea/go_cellular_component_gsea.csv
+
+# Figure 1: reduced GO terms
+!/data/mtec_high/derived_data/standard_gsea/rrvgo/downregulated/rat_mtec_high_BP/output_reduced_terms.csv
+!/data/mtec_high/derived_data/standard_gsea/rrvgo/upregulated/rat_mtec_high_BP/output_reduced_terms.csv
+
+# Figure 1: interferon enrichment
+!/data/mtec_high/derived_data/isg_pathways/gse281833_human_tec/ifn_vs_ctrl_gsea/gsea_analysis.csv
+!/data/mtec_high/derived_data/isg_pathways/gse281833_human_tec/ifn_specific_induced_isgs_gsea/gsea_analysis.csv
+
+# Figure 2 and supplementary figure 1: genomic windows
+!/data/mtec_high/derived_data/genomics/window_sliding/standardized/clusters.csv
+
+# Figure 2: observed and permuted neighbor counts
+!/data/temp/genomics/nearest_neighbor_clustering/data/aire_neighbors_count.csv
+!/data/temp/genomics/nearest_neighbor_clustering/data/random_nearest_neighbor_permutations.csv
+
+# Figure 3: TSA, APS1 antigens, and chemokines
+!/data/mtec_high/derived_data/tsa_expression/samsom_et_al_tsa_analysis/gsea_per_tissue/gsea_per_tissue.csv
+!/data/mtec_high/derived_data/tsa_expression/aps1_known_antigens/standardized/aps1_antigens.csv
+!/data/mtec_high/derived_data/chemokine_expression/chemokines.csv
+
+# Figure 3 and supplementary figure 2: cell-type enrichment
+!/data/mtec_high/derived_data/michelson_2022_mimetic_cells/gsea_analysis.csv
+!/data/mtec_low/derived_data/michelson_2022_mimetic_cells/gsea_analysis.csv
+!/data/mtec_high/derived_data/hollander_thymus_cell_types_gsea/cell_type_gsea.csv
+!/data/mtec_low/derived_data/hollander_thymus_cell_types_gsea/cell_type_gsea.csv
+
+# Curated tissue grouping used by the upstream analysis
+!/data/mtec_high/derived_data/tsa_expression/samsom_et_al_tsa_analysis/tsa_lists/tissue_groups.json
+
+# Reference downloads, except selected curated inputs
+/resources/**
+!/resources/**/
+!/resources/mouse_gene_atlas/picked_tissues/excluded_sample_groups.json
+!/resources/mouse_gene_atlas/picked_tissues/excluded_sample_groups_with_white_cells.json
+!/resources/mouse_gene_atlas/picked_tissues/sample_names.json
+!/resources/hollander_2020_thymus_cell_markers/thymus_cell_markers.csv
+
+# Generated figures
+/manuscript_figures/
+
+# Exploration
+/exploration_notes/
+/src/exploration/
+
+# Generated context export and local copy utilities
+/src/manuscript/manuscript.md
+/copy_data.py
+/AGENTS.md
+
+# Local environments and caches
+.idea/
+.vscode/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+Thumbs.db
+.DS_Store

@@ -6,6 +6,7 @@ from typing import Literal
 
 import polars as pl
 
+from config.paths import RSCRIPT_EXE
 from src.common.paths import find_file_in_project, resolve_dir_from_root
 from src.data_preprocessing.mtec_high.internal.R.run_R import run_rscript
 
@@ -32,7 +33,7 @@ class LimmaInput:
 
     merge: bool = True
 
-    rscript_exe: Path = Path("C:/R/R/bin/Rscript.exe")
+    rscript_exe: Path = RSCRIPT_EXE
     r_script: Path = find_file_in_project("limma_script.R")
     temporary_folder: Path = resolve_dir_from_root("data/temp/limma")
 
@@ -40,7 +41,7 @@ class LimmaInput:
 
     def __post_init__(self) -> None:
         if not self.rscript_exe.is_file():
-            raise FileNotFoundError("Rscript executable was not found: {self.rscript_exe}")
+            raise FileNotFoundError(f"Rscript executable was not found: {self.rscript_exe}")
 
         if not self.r_script.is_file():
             raise FileNotFoundError("Limma R script was not found: {self.r_script}")
@@ -68,10 +69,10 @@ def run_limma(limma_input: LimmaInput) -> pl.DataFrame:
     )
 
     if len(control_columns) < 2:
-        raise ValueError("At least two control columns are required; found {control_columns}")
+        raise ValueError(f"At least two control columns are required; found {control_columns}")
 
     if len(ko_columns) < 2:
-        raise ValueError("At least two KO columns are required; found {ko_columns}")
+        raise ValueError(f"At least two KO columns are required; found {ko_columns}")
 
 
     temporary_input_file: Path = limma_input.temporary_folder / f"{limma_input.output_file.stem}_limma_input.csv"
@@ -104,7 +105,7 @@ def run_limma(limma_input: LimmaInput) -> pl.DataFrame:
     )
 
     if not temporary_result_file.is_file():
-        raise RuntimeError("Limma did not create the expected result file: {temporary_result_file}")
+        raise RuntimeError(f"Limma did not create the expected result file: {temporary_result_file}")
 
     # These are the columns actually written by the R script.
     limma_df: pl.DataFrame = pl.read_csv(
@@ -134,7 +135,7 @@ def run_limma(limma_input: LimmaInput) -> pl.DataFrame:
     )
 
     if missing_r_columns:
-        raise ValueError("Limma result is missing columns: {sorted(missing_r_columns)}")
+        raise ValueError(f"Limma result is missing columns: {sorted(missing_r_columns)}")
 
     # Create common cross-method columns in Python.
     limma_df = limma_df.with_columns(
@@ -192,7 +193,7 @@ def run_limma(limma_input: LimmaInput) -> pl.DataFrame:
         )
 
         if missing_statistics > 0:
-            raise ValueError("Limma results were missing for {missing_statistics:,} input genes.")
+            raise ValueError(f"Limma results were missing for {missing_statistics:,} input genes.")
 
     result_df.write_csv(limma_input.output_file)
 

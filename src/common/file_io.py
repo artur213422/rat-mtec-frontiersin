@@ -178,4 +178,32 @@ def read_gmt_file(file: Path) -> pl.DataFrame:
         },
     )
 
+def ask_yes_no(prompt: str) -> bool:
+    while True:
+        answer: str = input(f"{prompt} [y/n]: ").strip().lower()
 
+        if answer in {"y", "yes"}:
+            return True
+
+        if answer in {"n", "no"}:
+            return False
+
+        print("Please answer 'y' or 'n'.")
+
+
+def delete_all_files(folder_path: Path, ask_permission: bool = False) -> None:
+    if not folder_path.exists():
+        raise FileNotFoundError(f"Folder does not exist: {folder_path}")
+
+    if not folder_path.is_dir():
+        raise NotADirectoryError(f"Path is not a directory: {folder_path}")
+
+    if ask_permission and not ask_yes_no(
+            f"Are you sure you want to delete all files in this directory?\n"
+            f"{folder_path}"
+    ):
+        return
+
+    for path in folder_path.iterdir():
+        if path.is_file():
+            path.unlink()

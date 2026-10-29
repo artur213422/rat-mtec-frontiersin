@@ -1,8 +1,14 @@
 from dataclasses import dataclass
+from enum import Enum
 from typing import Any
 
 import polars as pl
 from polars.datatypes import Float32, Float64, String
+
+class GseaMode(Enum):
+    Standard = "std"
+    Neg = "neg"
+    Pos = "pos"
 
 
 @dataclass(slots=True)
@@ -11,7 +17,8 @@ class GseaInput: # exactly two columns: gene, score
     gene_sets_dict: dict[str, list[str]]
     min_size: int = 7
     max_size: int = 500
-    permutation_num: int = 1000
+    permutation_num: int = 10000
+    gsea_mode: GseaMode = GseaMode.Standard
 
     def __post_init__(self) -> None:
         self._lowercase()

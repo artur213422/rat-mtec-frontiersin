@@ -19,10 +19,15 @@ def is_unique(gene_symbol: str) -> bool:
 
 def drop_invalid_values(df: DataFrame) -> tuple[DataFrame, int]:
     before: int = df.height
+    # Genomic coordinates are optional for expression analysis.
+    required_columns = [
+        col for col in df.columns
+        if col not in {"chromosome", "strand", "start", "stop"}
+    ]
 
     cleaned = (
         df
-        .drop_nulls()
+        .drop_nulls(subset=required_columns)
         .filter(
             (pl.col("gene_symbol") != "")
             & (pl.col("gene_symbol") != "---")
@@ -78,7 +83,10 @@ def is_real_gene(gene: str) -> bool:
         and gene != ""
     )
 
-def cleanup_gene_symbol(gene_symbol: str) -> str:
+def cleanup_gene_symbol(gene_symbol: str) -> str | None:
+    if gene_symbol is None:
+        return None
+
     symbols: list[str] = [
         s.strip()
         for s in gene_symbol.split("///")
@@ -198,16 +206,19 @@ def collapse_duplicate_genes_by_mean(
     ]
 
     if len(control_cols) == 0:
-        raise ValueError(
-            "No control columns found. Expected names like ctrl1, ctrl2, ..."
-        )
+        raise ValueError("No control columns found. Expected names like ctrl1, ctrl2, ...")
 
     if len(ko_cols) == 0:
-        raise ValueError(
-            "No KO columns found. Expected names like ko1, ko2, ..."
-        )
+        raise ValueError("No KO columns found. Expected names like ko1, ko2, ...")
 
     expression_cols: list[str] = control_cols + ko_cols
+    # Keep array-level provenance when several transcript clusters are reduced
+    # to one gene.  The first non-null locus is the representative locus.
+    locus_cols: list[str] = [
+        col
+        for col in ["chromosome", "strand", "group", "start", "stop"]
+        if col in df.columns
+    ]
 
     n_control: int = len(control_cols)
     n_ko: int = len(ko_cols)
@@ -236,10 +247,7 @@ def collapse_duplicate_genes_by_mean(
     for row in case_duplicates.iter_rows(named=True):
         symbols: list[str] = row["_symbols"]
 
-        print(
-            "Case-insensitive duplicate gene symbols found: "
-            + " / ".join(symbols)
-        )
+        print("Case-insensitive duplicate gene symbols found:  / ".join(symbols))
 
     df_with_effects: DataFrame = (
         df
@@ -348,6 +356,13 @@ def collapse_duplicate_genes_by_mean(
                 .mean()
                 .alias(col)
                 for col in expression_cols
+            ]
+            + [
+                pl.col(col)
+                .drop_nulls()
+                .first()
+                .alias(col)
+                for col in locus_cols
             ]
             + [
                 (
@@ -459,29 +474,34 @@ def find_match(df: DataFrame, col_name: str, query: str) -> str | None:
 
 
 def cleanup_mouse_rik_genes(data: pl.DataFrame, rik_annotation_table_file: Path) -> tuple[pl.DataFrame, int]:
-    annotation_table: DataFrame = pl.read_csv(rik_annotation_table_file, separator="\t")
+    annotation_table = pl.read_csv(rik_annotation_table_file, separator="\t",)
 
-    converted_count: int = 0
-    new_gene_symbols: list[str] = []
+    converted_count = 0
+    new_gene_symbols: list[str | None] = []
 
-    for row in data.iter_rows(named=True):
-        gene_symbol: str = row["gene_symbol"]
-
-        if is_rik_gene(gene_symbol):
-            match: str | None = find_match(
-                annotation_table,
-                "Marker Symbol",
-                gene_symbol
+    for gene_symbol in data["gene_symbol"]:
+        if gene_symbol is not None and is_rik_gene(gene_symbol):
+            replacements = (
+                annotation_table
+                .filter(pl.col("Marker Symbol") == gene_symbol)
+                .select("Current Marker Symbol (if withdrawn)")
+                .drop_nulls()
+                .filter(
+                    pl.col("Current Marker Symbol (if withdrawn)") != ""
+                )
+                .unique()
             )
 
-            if match is not None:
-                gene_symbol = match
+            if replacements.height == 1:
+                gene_symbol = replacements.item(0, 0)
                 converted_count += 1
+
+            elif replacements.height > 1:
+                print(f"Ambiguous current symbols for {gene_symbol}; leaving unchanged.")
 
         new_gene_symbols.append(gene_symbol)
 
-    data = data.with_columns(
-        pl.Series("gene_symbol", new_gene_symbols)
+    return (
+        data.with_columns(pl.Series("gene_symbol", new_gene_symbols)),
+        converted_count,
     )
-
-    return data, converted_count

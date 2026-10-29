@@ -1,7 +1,9 @@
+from pathlib import Path
+
 from src.common.dataset_catalog.internals.dataset_metada_parser import get_datasets
 from src.common.dataset_catalog.internals.types import DatasetMetadata
 from src.common.types.enums import CellPopulation, Species
-
+import polars as pl
 
 def get_mouse_tec_high() -> list[DatasetMetadata]:
     return get_datasets(Species.MOUSE, CellPopulation.MTEC_HIGH)
@@ -40,3 +42,11 @@ def get_mtec_high() -> list[DatasetMetadata]:
         *get_mouse_tec_high(),
         get_rat_tec_high(),
     ]
+
+def read_file_with_ortholog_id(file: Path) -> pl.DataFrame:
+    return pl.read_csv(
+        file,
+        schema_overrides={
+            "ortholog_id": pl.String,
+        },
+    )

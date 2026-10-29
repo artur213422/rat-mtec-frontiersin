@@ -1,0 +1,4 @@
+This is generic two conditional limma voom
+Use it for RNA seq for example HE vs KO or ctrl vs infa
+
+Python's LimmaVoomInput shows what input it needs

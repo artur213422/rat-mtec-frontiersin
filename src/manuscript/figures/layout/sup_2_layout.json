@@ -1,0 +1,29 @@
+{
+  "canvas": {
+    "width_mm": 180.0,
+    "height_mm": 89.0,
+    "origin": "top-left"
+  },
+  "order": [
+    "A",
+    "B"
+  ],
+  "panels": {
+    "A": {
+      "name": "A",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 92.0,
+      "height": 89.0,
+      "color": "#ED1C24"
+    },
+    "B": {
+      "name": "B",
+      "x": 92.0,
+      "y": 0.0,
+      "width": 88.0,
+      "height": 89.0,
+      "color": "#EFE4B0"
+    }
+  }
+}

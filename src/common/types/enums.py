@@ -25,3 +25,9 @@ class Colors(StrEnum):
     ORANGE = "orange"
     PURPLE = "purple"
     WHITE = "white"
+
+    DARK_BLUE = "#235f96"
+    OFF_WHITE = "#f7f7f7"
+    DARK_RED = "#af2a35"
+    LIGHT_GRAY = "#e0e0e0"
+    DARK_GRAY = "#a9a9a9"

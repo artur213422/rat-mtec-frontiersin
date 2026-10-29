@@ -1,0 +1,32 @@
+[
+  "3T3-L1",
+  "Baf3",
+  "C2C12",
+  "C3H_10T1_2",
+  "embryonic_stem_line_Bruce4_p13",
+  "embryonic_stem_line_V26_2_p16",
+
+  "macrophage_bone_marrow_24h_LPS",
+  "macrophage_bone_marrow_2hr_LPS",
+  "macrophage_bone_marrow_6hr_LPS",
+  "macrophage_peri_LPS_thio_1hrs",
+  "macrophage_peri_LPS_thio_7hrs",
+
+  "mast_cells_IgE",
+  "mast_cells_IgE+antigen_1hr",
+  "mast_cells_IgE+antigen_6hr",
+
+  "min6",
+  "neuro2a",
+  "nih_3T3",
+  "RAW_264_7",
+
+  "microglia",
+  "mIMCD-3",
+  "olfactory_bulb",
+
+  "osteoblast_day14",
+  "osteoblast_day21",
+  "osteoblast_day5",
+  "osteoclasts"
+]

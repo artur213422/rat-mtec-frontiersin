@@ -49,6 +49,7 @@ class UpSetPlotStyle:
     matrix_height_fraction: float = 0.35
     x_tick_rotation: float = 45.0
 
+    collapse_duplicate_tuple_labels: bool = False
 
 @dataclass(frozen=True, slots=True)
 class UpSetPlotSpec:

@@ -17,7 +17,7 @@ rat_dataset: DatasetMetadata = get_rat_tec_high()
 
 
 output: Path = resolve_dir_from_root("data/mtec_high/standardized/rat")
-source_path: Path = resolve_dir_from_root("data/mtec_high/raw/intermediate/cleaned_names_expression_matrix/rat")
+source_path: Path = resolve_dir_from_root("data/mtec_high/source/intermediate/cleaned_names_expression_matrix/rat")
 ortholog_map: pl.DataFrame = pl.read_csv(ortholog_map_file)
 
 

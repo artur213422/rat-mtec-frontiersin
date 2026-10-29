@@ -1,0 +1,20 @@
+[
+  "data/mtec_high/derived_data/tsa_expression/aps1_known_antigens/source/aps1_aire_antigens_source.csv",
+  "data/mtec_high/derived_data/tsa_expression/samsom_et_al_tsa_analysis/tsa_lists/tissue_groups.json",
+  "resources/array_platform_annotation_table/GPL1261-56135.txt",
+  "resources/array_platform_annotation_table/GPL6246-18741.txt",
+  "resources/array_platform_annotation_table/GPL81-57556.txt",
+  "resources/array_platform_annotation_table/rat_chromosome_data.txt",
+  "resources/gene_name_conversion/mouse/MRK_List1.rpt",
+  "resources/gene_name_conversion/mouse/biomart_ens_mouse_symbol_annotations.csv",
+  "resources/gene_name_conversion/orthologs/HOM_AllOrganism.rpt.csv",
+  "resources/gene_name_conversion/rat/biomart_ens_rat_symbol_annotations.csv",
+  "resources/gene_name_conversion/rat/rat_rgb_symbol_annotations.txt",
+  "resources/hollander_2020_thymus_cell_markers/thymus_cell_markers.csv",
+  "resources/hollander_2020_thymus_cell_markers/thymus_cell_markers.gmt",
+  "resources/michelson_2022_et_al_mimetic_cells/source/NIHMS1834913-supplement-2.xlsx",
+  "resources/mouse_gene_atlas/picked_tissues/excluded_sample_groups.json",
+  "resources/mouse_gene_atlas/picked_tissues/excluded_sample_groups_with_white_cells.json",
+  "resources/mouse_gene_atlas/picked_tissues/sample_names.json",
+  "resources/mouse_gene_atlas/raw/GSE10246_affy_rma_log2_probe_by_sample.csv"
+]

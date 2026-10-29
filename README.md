@@ -1,72 +1,34 @@
+# TITLE
+
+This repository contains the analysis code and processed inputs used to generate figure panels for the manuscript:
+
+**TITLE**
+
+The workflow is organized in Python, with R scripts used for statistical analyses. 
+Python handles data preparation, processing, and visualization, primarily using Polars and Matplotlib. 
+Running the upstream analysis workflow requires both Python and R.
+
+The code in `src/manuscript/` generates manuscript figure panels from the included processed data. 
+Panels are exported primarily as SVG files and were subsequently edited manually for publication. 
+The generated panels therefore differ in appearance from the final published figures.
+
+The remaining code documents the upstream processing and analysis workflow. 
+Running `python bootstrap.py` creates the expected directory structure and downloads a subset of the required source data 
+and reference resources. Additional inputs must be obtained separately, including the CEL files described in the manuscript. 
 
 
+## Repository structure
+
+```text
+config/                  Dataset definitions and processing settings
+data/                    Selected standardized data and manuscript inputs
+src/
+├── manuscript/          Manuscript figure and panel generation
+├── analysis/            Upstream analyses
+├── data_preprocessing/  Source-data processing
+├── resource_processing/ Reference-data preparation
+└── common/              Shared functions and utilities
+bootstrap.py             Directory setup and available input downloads
 ```
-article/
-├── data/
-│   ├── raw/
-│   │   ├── mouse/
-│   │   └── rat/
-│   │
-│   ├── intermediate/
-│   ├── processed/
-│   └── exploration/
-│       ├── chemokines/
-│       ├── expression_patterns/
-│       └── mtec_species_comparison/
-├── src/
-│   ├── data_preprocessing/
-│   │    ├── pipelines
-│   │    │    ├── mouse_dataset_pipeline/
-│   │    │    └── rat_dataset_pipeline/
-│   │    └── internal/
-│   ├── common/
-│   │    ├── types/
-│   │    └── models/
-│   ├── exploration/
-│   └── manuscript/
-│
-├── figures/
-│   ├── exploratory/
-│   └── manuscript/
-│
-└── config/
-```
 
-rat annotation tables.
-https://download.rgd.mcw.edu/data_release
-
-https://www.ensembl.org/biomart/martview/4b392f59783586f3d35d436d27b689ff
-
-- [ ] All down regulated genes mouse vs rat 
-  - How much changed
-  - Top genes
-
-- [x] Chemokines mouse vs rat. Highlight thymus important genes (ccl19, ccl21, ccl25, xcl1, cxcl12, ccl17, ccl22).
-
-- [ ] mTEC (and also skin) differentiation related genes (like epidermal differentiation complexi (EDC) genes).
-
-- [ ] T1 and T2 ISG rat vs rot. Total ISG comparison is already done.
-
-- [x] Kallikreins cluster expression pattern
-
-- [x] Major Histocompatibility Complex (MHC) & Antigen Presentation comparison
-
-- [x] TSA comparison
-
-- [ ] Imprinted gene clusters
-
-- [ ] Thymic mimetic cell marker genes
-
-- [x] Peptide hormones
-
-- [ ] Põhimõtteliselt võiks veel vaadata ka nt. kõrge vs madalaekspressioonitasemega geenid (st et basaalekspressioon oleks madal)
-või ka nt suured vs väikesed geenid. aga see eeldab muidugi jälle kvaliteetse nimekirja olemasolu.
-
-  interfeone
-
-
-
-GSE85     = MAS5 / Norm signal; not explicitly log2; treat as linear signal
-GSE2585   = MAS5 signal; not log2; treat as linear signal
-GSE14365  = RMA in R; treat as log2 RMA expression
-GSE33878  = RMA signal; scale not explicitly stated in GEO; treat as ambiguous
+The main entry points for figure generation are in `src/manuscript/figures/`. Individual panel scripts are in `src/manuscript/panels/`.

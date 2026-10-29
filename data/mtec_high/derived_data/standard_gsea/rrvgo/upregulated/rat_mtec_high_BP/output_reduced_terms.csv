@@ -1,0 +1,28 @@
+"go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0061436",8,"GO:0061436",2.91695104571777,36,"establishment of skin barrier","establishment of skin barrier",0.903259259259259,0.635,0
+"GO:0006260",1,"GO:0006260",2.82349486636228,292,"DNA replication","DNA replication",0.916074074074074,0.532,0
+"GO:0006261",1,"GO:0006260",2.3276508469353,150,"DNA-templated DNA replication","DNA replication",0.918444444444444,0.532,0.936
+"GO:0043586",8,"GO:0061436",2.1016188795743,29,"tongue development","establishment of skin barrier",0.924777777777778,0.786,0.308
+"GO:0031999",9,"GO:0031999",1.87495800618793,8,"negative regulation of fatty acid beta-oxidation","negative regulation of fatty acid beta-oxidation",0.891518518518518,0.673,0
+"GO:0014891",4,"GO:0014891",1.86243304796156,13,"striated muscle atrophy","striated muscle atrophy",0.92162962962963,0.476666666666667,0
+"GO:0021761",3,"GO:0021761",1.84119943952,182,"limbic system development","limbic system development",0.891518518518518,0.8015,0
+"GO:0099140",13,"GO:0099140",1.71343798610495,7,"presynaptic actin cytoskeleton organization","presynaptic actin cytoskeleton organization",0.956148148148148,0.502,0
+"GO:0051151",12,"GO:0051151",1.71343798610495,21,"negative regulation of smooth muscle cell differentiation","negative regulation of smooth muscle cell differentiation",0.863222222222222,0.468666666666667,0
+"GO:0014819",4,"GO:0014891",1.70357418550758,24,"regulation of skeletal muscle contraction","striated muscle atrophy",0.918333333333333,0.615333333333333,0.58
+"GO:0014732",4,"GO:0014891",1.70357418550758,12,"skeletal muscle atrophy","striated muscle atrophy",0.922074074074074,0.478666666666667,0.99
+"GO:0048742",12,"GO:0051151",1.66637070346398,12,"regulation of skeletal muscle fiber development","negative regulation of smooth muscle cell differentiation",0.849740740740741,0.479666666666667,0.732
+"GO:0035860",10,"GO:0035860",1.60384652191955,14,"glial cell-derived neurotrophic factor receptor signaling pathway","glial cell-derived neurotrophic factor receptor signaling pathway",0.963481481481481,1,0
+"GO:0099187",13,"GO:0099140",1.55670987991025,8,"presynaptic cytoskeleton organization","presynaptic actin cytoskeleton organization",0.956074074074074,0.502,0.996
+"GO:0042447",11,"GO:0042447",1.54374840934244,15,"hormone catabolic process","hormone catabolic process",0.90237037037037,1,0
+"GO:0030216",8,"GO:0061436",1.50622600522265,153,"keratinocyte differentiation","establishment of skin barrier",0.87737037037037,0.626333333333333,0.787
+"GO:0007350",2,"GO:0007350",1.4926073863301,24,"blastoderm segmentation","blastoderm segmentation",0.924925925925926,1,0
+"GO:0014857",5,"GO:0014857",1.48188382041596,16,"regulation of skeletal muscle cell proliferation","regulation of skeletal muscle cell proliferation",0.971592592592593,1,0
+"GO:0018210",7,"GO:0018210",1.48188382041596,61,"peptidyl-threonine modification","peptidyl-threonine modification",0.918703703703704,0.5,0
+"GO:0018107",7,"GO:0018210",1.48188382041596,61,"peptidyl-threonine phosphorylation","peptidyl-threonine modification",0.918703703703704,0.5,1
+"GO:0008038",3,"GO:0021761",1.47849997931787,52,"neuron recognition","limbic system development",0.890925925925926,0.8015,0.397
+"GO:0042904",9,"GO:0031999",1.45182848311762,7,"9-cis-retinoic acid biosynthetic process","negative regulation of fatty acid beta-oxidation",0.858222222222222,0.4525,0.47
+"GO:0042905",9,"GO:0031999",1.45182848311762,7,"9-cis-retinoic acid metabolic process","negative regulation of fatty acid beta-oxidation",0.857740740740741,0.45125,0.472
+"GO:0051147",12,"GO:0051151",1.44375741070784,173,"regulation of muscle cell differentiation","negative regulation of smooth muscle cell differentiation",0.855037037037037,0.436333333333333,0.862
+"GO:0042574",9,"GO:0031999",1.44236196605724,15,"retinal metabolic process","negative regulation of fatty acid beta-oxidation",0.901,0.54575,0.366
+"GO:0035873",6,"GO:0035873",1.37992902023889,8,"lactate transmembrane transport","lactate transmembrane transport",0.95537037037037,0.5025,0
+"GO:0015727",6,"GO:0035873",1.37992902023889,8,"lactate transport","lactate transmembrane transport",0.963148148148148,0.5025,0.995

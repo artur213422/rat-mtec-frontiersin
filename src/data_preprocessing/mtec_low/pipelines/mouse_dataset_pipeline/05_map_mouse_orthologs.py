@@ -16,7 +16,7 @@ ortholog_map_file: Path = find_file_in_project("HOM_AllOrganism.rpt.csv")
 mouse_datasets: list[DatasetMetadata] = get_mouse_tec_low()
 
 output: Path = resolve_dir_from_root("data/mtec_low/standardized/mouse")
-source_path: Path = resolve_dir_from_root("data/mtec_low/raw/intermediate/cleaned_names_expression_matrix/mouse")
+source_path: Path = resolve_dir_from_root("data/mtec_low/source/intermediate/cleaned_names_expression_matrix/mouse")
 ortholog_map: pl.DataFrame = pl.read_csv(ortholog_map_file)
 
 
@@ -44,7 +44,7 @@ for dataset in mouse_datasets:
     ### Map orthologs
     for row in tec_df.iter_rows(named=True):
         gene: str = row["gene_symbol"]
-        result: OrthologRequest = find_ortholog(gene, OrthologSpecies.RAT, ortholog_map)
+        result: OrthologRequest = find_ortholog(gene, OrthologSpecies.MOUSE, ortholog_map)
 
         has_clean_ortholog: bool = True
         match result.status:

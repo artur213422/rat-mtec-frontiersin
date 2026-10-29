@@ -4,6 +4,7 @@ if (length(args) != 1) {
     stop("Expected one JSON configuration argument.")
 }
 
+
 suppressPackageStartupMessages({
     library(jsonlite)
     library(limma)

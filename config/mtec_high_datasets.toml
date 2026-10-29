@@ -6,14 +6,13 @@ annotation_table = "GPL81-57556.txt"
 platform_package = "mgu74av2cdf"
 species = "mouse"
 data_processing_pipeline = "mouse"
+annotation_package = "mgu74av2.db"
 
-control_samples = [
-    "GSM2444",	"GSM2445",	"GSM2446"
-]
+original_control_samples = ["GSM2444", "GSM2445", "GSM2446"]
+original_ko_samples = ["GSM2447", "GSM2448", "GSM2449"]
 
-ko_samples = [
-	"GSM2447",	"GSM2448",	"GSM2449"
-]
+control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+ko_samples = ["ko1", "ko2", "ko3"]
 
 
 [[dataset]]
@@ -24,17 +23,14 @@ annotation_table = "GPL81-57556.txt"
 platform_package = "mgu74av2cdf"
 species = "mouse"
 data_processing_pipeline = "mouse"
+annotation_package = "mgu74av2.db"
 
-control_samples = [
-    "GSM49735",
-    "GSM49736",
-]
 
-ko_samples = [
-    "GSM49731",
-    "GSM49732",
-]
+original_control_samples = ["GSM49735", "GSM49736"]
+original_ko_samples = ["GSM49731", "GSM49732"]
 
+control_samples = ["ctrl1", "ctrl2"]
+ko_samples = ["ko1", "ko2"]
 
 
 [[dataset]]
@@ -45,18 +41,13 @@ annotation_table = "GPL6246-18741.txt"
 platform_package = "pd.mogene.1.0.st.v1"
 species = "mouse"
 data_processing_pipeline = "mouse"
+annotation_package = "mogene10sttranscriptcluster.db"
 
-control_samples = [
-    "GSM838272",
-    "GSM838273",
-    "GSM838274",
-]
+original_control_samples = ["GSM838272", "GSM838273", "GSM838274"]
+original_ko_samples = ["GSM838275", "GSM838276", "GSM838277"]
 
-ko_samples = [
-    "GSM838275",
-    "GSM838276",
-    "GSM838277",
-]
+control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+ko_samples = ["ko1", "ko2", "ko3"]
 
 
 [[dataset]]
@@ -68,16 +59,75 @@ cel_protocol = "oligo"
 species = "rat"
 age_weeks = 4
 data_processing_pipeline = "rat"
+annotation_package = "empty"
 
-control_samples = [
-    "ctrl1",
-    "ctrl2",
-    "ctrl3"
-]
+# The raw rat input already uses these standardized names.
+original_control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+original_ko_samples = ["ko1", "ko2", "ko3"]
 
-ko_samples = [
-    "ko1",
-    "ko2",
-    "ko3"
-]
+control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+ko_samples = ["ko1", "ko2", "ko3"]
 
+
+
+# GSE8564 — C57BL/6 (B6)
+# Male mice, approximately 3–4.5 weeks old
+# MHC-II-high mTECs; WT 3, KO 3
+
+[[dataset]]
+dataset_id = "mouse_gse8564_b6_mtec_high"
+dataset_name = "GSE8564_B6"
+cel_protocol = "affy"
+annotation_table = "GPL1261-56135.txt"
+platform_package = "mouse4302cdf"
+species = "mouse"
+data_processing_pipeline = "mouse"
+annotation_package = "mouse4302.db"
+
+original_control_samples = ["GSM212611", "GSM212612", "GSM212613"]
+original_ko_samples = ["GSM212614", "GSM212615", "GSM212616"]
+
+control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+ko_samples = ["ko1", "ko2", "ko3"]
+
+
+# GSE8564 — BALB/c
+# Male mice, approximately 3–4.5 weeks old
+# MHC-II-high mTECs; WT 4, KO 4
+
+[[dataset]]
+dataset_id = "mouse_gse8564_balbc_mtec_high"
+dataset_name = "GSE8564_BALB"
+cel_protocol = "affy"
+annotation_table = "GPL1261-56135.txt"
+platform_package = "mouse4302cdf"
+species = "mouse"
+data_processing_pipeline = "mouse"
+annotation_package = "mouse4302.db"
+
+original_control_samples = ["GSM212629", "GSM212630", "GSM212631", "GSM212632"]
+original_ko_samples = ["GSM212633", "GSM212634", "GSM212635", "GSM212636"]
+
+control_samples = ["ctrl1", "ctrl2", "ctrl3", "ctrl4"]
+ko_samples = ["ko1", "ko2", "ko3", "ko4"]
+
+
+# GSE8564 — NOD
+# Male mice, approximately 3–4.5 weeks old
+# MHC-II-high mTECs; WT 3, KO 3
+
+[[dataset]]
+dataset_id = "mouse_gse8564_nod_mtec_high"
+dataset_name = "GSE8564_NOD"
+cel_protocol = "affy"
+annotation_table = "GPL1261-56135.txt"
+platform_package = "mouse4302cdf"
+species = "mouse"
+data_processing_pipeline = "mouse"
+annotation_package = "mouse4302.db"
+
+original_control_samples = ["GSM212637", "GSM212638", "GSM212639"]
+original_ko_samples = ["GSM212640", "GSM212641", "GSM212642"]
+
+control_samples = ["ctrl1", "ctrl2", "ctrl3"]
+ko_samples = ["ko1", "ko2", "ko3"]
