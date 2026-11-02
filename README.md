@@ -1,8 +1,8 @@
-# TITLE
+# Conserved and species-specific Aire-dependent programs in thymic epithelial cells
 
 This repository contains the analysis code and processed inputs used to generate figure panels for the manuscript:
 
-**TITLE**
+**Conserved and species-specific Aire-dependent programs in thymic epithelial cells**
 
 The workflow is organized in Python, with R scripts used for statistical analyses. 
 Python handles data preparation, processing, and visualization, primarily using Polars and Matplotlib. 
